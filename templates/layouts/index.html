@@ -1,4 +1,4 @@
-{% load static %}
+
 
 <!DOCTYPE html>
 <html lang="en" data-bs-theme=light>
@@ -9,16 +9,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="A production ready example Django app that's using Docker and Docker Compose.">
 
-    <link rel="stylesheet" href="{% static 'css/app.css' %}">
-    <link rel="stylesheet" href="{% static 'css/style.bundle.css' %}">
-    <script defer src="{% static 'js/app.js' %}"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename= 'css/app.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename= 'css/style.bundle.css') }}">
+    <script defer src="{{url_for('static', filename= 'js/app.js') }}"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     {# Generated with: https://realfavicongenerator.net/ #}
-    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'static/apple-touch-icon.png' %}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'static/favicon-32x32.png' %}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'static/favicon-16x16.png' %}">
-    <link rel="manifest" href="{% static 'static/site.webmanifest' %}">
-    <link rel="mask-icon" href="{% static 'safari-pinned-tab.svg' %}" color="#61b9d2">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{url_for('static', filename= 'static/apple-touch-icon.png' )}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{url_for('static', filename= 'static/favicon-32x32.png' )}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{url_for('static', filename= 'static/favicon-16x16.png' )}}">
+    <link rel="manifest" href="{{url_for('static', filename= 'static/site.webmanifest' )}}">
+    <link rel="mask-icon" href="{{url_for('static', filename= 'safari-pinned-tab.svg' )}}" color="#61b9d2">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
   </head>
