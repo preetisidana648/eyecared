@@ -313,6 +313,7 @@ def format_appointment_date(date):
             change the date in this format:"%m/%d/%Y" or  "month/day/year" 
             and return date in mm/dd/yyyy format only
             example: mm/dd/yyyy
+            if date is already in this fomrat then return as it is
             please provide only response
             <|eot_id|>
             <|start_header_id|>user<|end_header_id|>
