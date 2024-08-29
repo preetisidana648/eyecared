@@ -113,7 +113,10 @@ def fetch_info(response):
         return {}
 # Function to identify intent
 def identify_intent(user_query):
-    
+    data = json.loads(request.get_data(as_text=True))
+    session_id = data.get('session_id', '')
+    context=session[f'context{session_id}'] 
+    print("dhsjfhj",context)
     model_prompt_for_intent = f"""
         <|begin_of_text|><|start_header_id|>system<|end_header_id|>
         "Identify the primary intent of the following user query:n"
@@ -125,9 +128,12 @@ def identify_intent(user_query):
         - Requesting static information (e.g., office hours, address)
         - Other inquiries
         Provide only the primary identified intent from the list above. Do not add anything extra..
+        read the query carefully and understnd the intent carefully.
+        if in context if there are details regarding book appointments then goes to "booking an appointment"
+
         <|eot_id|>
         <|start_header_id|>user<|end_header_id|>
-        {user_query}<|eot_id|><|start_header_id|>assistant<|end_header_id|>"""
+        {context}<|eot_id|><|start_header_id|>assistant<|end_header_id|>"""
     retries = 3
     backoff_factor = 0.3
  
@@ -627,18 +633,20 @@ def update_context(text):
     context = session[f'context{session_id}']
     response_content_prompt = f"""
                 <|begin_of_text|><|start_header_id|>system<|end_header_id|>
-                "This is my current information: {context}\n"
+                "This is my current context: {context}\n"
                 Instructions:
                 - If the user specifies which information to change, provide the updated context with those changes applied only and return the full context donot delete anything.
-                
+                - this context is reqarding booking an appointment so do no remove any thing like 'i want to book appointment' or something like this
                 please follow the above instructions carefully.
                 <|eot_id|>
                 <|start_header_id|>user<|end_header_id|>
                 {text}<|eot_id|><|start_header_id|>assistant<|end_header_id|>
                 """
-    response_content = call_huggingface_endpoint(response_content_prompt, api_url, hugging_face_api_token,256 ,False  ,0.09 ,0.9)
+    response_content = call_huggingface_endpoint(response_content_prompt, api_url, hugging_face_api_token,256 ,False  ,0.01 ,0.9)
     response_content = response_content[len(response_content_prompt):].strip()
     delete_session(session_id)
+    print(context,'--------context')
+    print(response_content,'--------------updated context')
     session[f'context{session_id}'] = response_content.replace('"','')
     return response_content
 # Function to generate response using Hugging Face endpoint
@@ -1085,7 +1093,7 @@ def handle_user_query():
             session[f'context{session_id}'] = message
 
         input_message = session.get(f'context{session_id}', '')
-
+        print(input_message)
         if not input_message:
             print("Missing 'message' in session context")
 
