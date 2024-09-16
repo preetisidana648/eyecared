@@ -42,11 +42,10 @@ prompt = PromptTemplate(
       return the answers as soon as you get the answer to the question
       also keep the chat history in mind 
       if user ask query related to appointment with greeting like hi..then donot go to greeting response.you have to go fetch info tool for book appointment
-      IF user ask any static informationn like office addres ,timing or related to  organisation then donot use fetch info
+      IF user ask any static informationn like office addres ,timing or related to  organisation then do not use fetch info
       read the instruction carefully and follow the steps.
-      understand the chat history and see what user wants to do and make the action input accordingly.
-      try 1 iteration only and if result is not found return this text ```Please clarify your query so I can assist you better.```
-    
+      understand the chat history and see what user wants to do and make the action input accordingly .
+      
       Chat_history: {agent_scratchpad}
       
          
@@ -142,7 +141,7 @@ def call_huggingface_endpoint(prompt, api_url,  max_new_tokens,  do_sample, temp
 
 def format_appointment_date(date):
     current_date=datetime.now().strftime("%B %d, %Y")
-
+    
     day=datetime.now().strftime('%A')
     model_prompt_for_appointment = f"""
             <|begin_of_text|><|start_header_id|>system<|end_header_id|>
@@ -150,7 +149,7 @@ def format_appointment_date(date):
                 -current date is : {current_date} 
                 -day today is : {day}
                 -user text : {date}
-            calculate the date according to users query if user says something like  next monday or upcomming wednesday etc.
+            change the date according to users query if user says something like  next monday or upcomming wednesday etc.
             change the date in this format:"%m/%d/%Y" .
             and return date in 'mm/dd/yyyy' format only .
             return the date only.
@@ -365,24 +364,26 @@ def fetch_info(response):
         <|begin_of_text|><|start_header_id|>system<|end_header_id|>
         text: {response}
         
-        Extract the following information from given text : FirstName, LastName, DateOfBirth, Email, PhoneNumber and PreferredDateOrTime  if available ,determine what could be the information
-        and if any fields in the information is not there return it as ```empty``` .
+        Extract the following information from given text : FirstName, LastName, DateOfBirth, Email, PhoneNumber and PreferredDateOrTime  if available ,determine what the given input could be.
+        and if any fields in the information is not there in the given text  return it as ```empty``` .
         instruction:
-        -here PreferredDateOrTime field is the date the user wants to book the appoinmnet on. 
-        -Do not add any things if not present in the given text, leave it empty.
-        -Always Provide proper indexing for each extracted field at the begining.
-        -Understand the user input carefully and extract anything you can for these fields (FirstName, LastName, DateOfBirth, Email, PhoneNumber and PreferredDateOrTime) from the user querry.
-        -Do not change email and Phone no if they are incorrect Keep them as it is.
-        -please extract that name whose appointment to be booked as parents can book the appointment of child so extract child name not parents names if condition arises
-        -understand user query carefully  
-        -Read the full information carefully.
-        - Do not take FirstName and LastName from the email ID (e.g., email: abc@gmail.com). Do not use 'abc' as it does not specify the name.
+        - Here PreferredDateOrTime field is the date the user wants to book the appoinmnet on. 
+        - Do not add any things if not present in the given text, leave it empty.
+        - Always Provide proper indexing for each extracted field at the begining.
+        - Understand the user input carefully and extract the information you can for these fields (FirstName, LastName, DateOfBirth, Email, PhoneNumber and PreferredDateOrTime) from the user query. Do not extract FirstName or Lastname from the email. 
+        - Do not change email and Phone no if they are incorrect Keep them as it is.
+        - please extract that name whose appointment to be booked, as parents can book the appointment of child so extract child name not parents names if condition arises.
+        - understand user query carefully  
+        - Read the full information carefully.
         - Understand the user query carefully and read the full information thoroughly.
-        -donot extract the field which are not given  
+        - Do not extract the field which are not given  
+        - Do not extract FirstName or Lastname from the email, if Firstname or Lastname is not given in user input leave these fiels as empty.
+        - return data in dictionary format (key Value pair)
         <|eot_id|>
         <|start_header_id|>user<|end_header_id|>
           {response}
         <|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
         """
     try:
         result = call_huggingface_endpoint(modelPromptForAppointment, api_url,256 ,False  ,0.09 ,0.9)
@@ -391,11 +392,12 @@ def fetch_info(response):
         data_dict = {}
         for line in result.split('\n'):
             if ':' in line:
-                pattern = r"(\d*\.)?\s*([a-zA-Z\s]+):\s*(.+)"
+                print(line,'line')
+                pattern = r'["\d\.\s]*([a-zA-Z]+)\s*[:"]+\s*"([^"]*)"'
                 matches = re.findall(pattern, line)
                 if matches:
-                    
-                    key, value = matches[0][1].strip(), matches[0][2].strip()
+                    print(matches)
+                    key, value = matches[0][0], matches[0][1]
                     # if key.lower()=='preferreddateortime' or key.lower()=='dateofbirth':
                     #     value=format_appointment_date(value)
 
@@ -977,7 +979,7 @@ def handle_user_input(request,user_input,history,practice):
     tools=[fetch_info_to_change,query_chroma_and_generate_response,fetch_info,get_locations,get_providers,get_appointment_reasons,get_open_slots,sndotp,book_appointment,get_greeting_response,generate_response]
    
     agent = create_react_agent(llm, tools, prompt,stop_sequence=["Final Answer","Observation","short_queries is not a valid tool"])
-    agent_executor = AgentExecutor.from_agent_and_tools(agent=agent, tools=tools,verbose=True, handle_parsing_errors=True,max_iterations=6)
+    agent_executor = AgentExecutor.from_agent_and_tools(agent=agent, tools=tools,verbose=True, handle_parsing_errors=True,max_iterations=1)
     global state
     
     data = json.loads(request.body.decode('utf-8'))

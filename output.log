@@ -1,0 +1,112 @@
+
+
+[1m> Entering new AgentExecutor chain...[0m
+
+
+[1m> Entering new RunnableSequence chain...[0m
+
+
+[1m> Entering new RunnableAssign<agent_scratchpad> chain...[0m
+
+
+[1m> Entering new RunnableParallel<agent_scratchpad> chain...[0m
+
+
+[1m> Entering new RunnableLambda chain...[0m
+
+[1m> Finished chain.[0m
+
+[1m> Finished chain.[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new PromptTemplate chain...[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new ReActSingleInputOutputParser chain...[0m
+[32;1m[1;3m get_greeting_response
+                  {'user_input': 'hii'}<|eom_id|>[0mInvalid Format: Missing 'Action:' after 'Thought:
+
+[1m> Entering new RunnableSequence chain...[0m
+
+
+[1m> Entering new RunnableAssign<agent_scratchpad> chain...[0m
+
+
+[1m> Entering new RunnableParallel<agent_scratchpad> chain...[0m
+
+
+[1m> Entering new RunnableLambda chain...[0m
+
+[1m> Finished chain.[0m
+
+[1m> Finished chain.[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new PromptTemplate chain...[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new ReActSingleInputOutputParser chain...[0m
+
+[1m> Finished chain.[0m
+
+[1m> Finished chain.[0m
+[32;1m[1;3m return this text in the following format as soon as you get the answer to the question
+                Please clarify your query so I can assist you better.
+                give the user input as it is donot cut words
+                Action: get_greeting_response
+                Action Input: {'user_input': 'hii'}
+                [0m[36;1m[1;3m{'response_text': 'Hi there, Im here to help you with your eye care needs. How can I assist you today?', 'data_dict': {'FirstName': '', 'LastName': ''}, 'tool_used': 'greeting'}[0m
+[32;1m[1;3m[0m
+
+[1m> Finished chain.[0m
+[32m2024-09-12 16:20:00.813[0m | [1mINFO    [0m | [36mchat_bot.views[0m:[36mhandle_user_input[0m:[36m1010[0m - [1m{'input': 'hii', 'tools': [StructuredTool(name='query_chroma_and_generate_response', description='this tool is extract the information related to organisation related query like address or any other relevant information related to organisation\n       Do not use this if user is sharing some details about them or details related to appointment like dates name phone no or email etc.\n        it want following arguments (query,practice)', args_schema=<class 'pydantic.v1.main.query_chroma_and_generate_responseSchema'>, return_direct=True, func=<function query_chroma_and_generate_response at 0x00000219476C76A0>), StructuredTool(name='fetch_info', description='this tool will extract the users information like FirstName, LastName, DateOfBirth, Email, PhoneNumber and PreferredDateOrTime from the given users input it can extract all at once or one at a time to book the appointment', args_schema=<class 'pydantic.v1.main.fetch_infoSchema'>, return_direct=True, func=<function fetch_info at 0x00000219476C7EC0>), StructuredTool(name='get_greeting_response', description="Respond to the user's greeting.\n       if the user is greating you. \n       use this tool only if the primary intenet of the user is greeting only\n       not to use when primary intent is something else.\n       or do not use this if user want to book appointment\n       this tool take user input as tool arguments", args_schema=<class 'pydantic.v1.main.get_greeting_responseSchema'>, return_direct=True, func=<function get_greeting_response at 0x00000219476C7740>), StructuredTool(name='generate_response', description='if user ask anything other then the appointment or max eyr care and  if the users input is not related to booking appointment or eyecare. \n       Do not use this if user is sharing some details about them or details related to appointment like dates name phone no or email etc.', args_schema=<class 'pydantic.v1.main.generate_responseSchema'>, return_direct=True, func=<function generate_response at 0x00000219476C7B00>)], 'tool_names': 'query_chroma_and_generate_response, fetch_info, get_greeting_response, generate_response', 'tool_description': "this tool is extract the information related to organisation related query like address or any other relevant information related to organisation\n       Do not use this if user is sharing some details about them or details related to appointment like dates name phone no or email etc.\n        it want following arguments (query,practice), this tool will extract the users information like FirstName, LastName, DateOfBirth, Email, PhoneNumber and PreferredDateOrTime from the given users input it can extract all at once or one at a time to book the appointment, Respond to the user's greeting.\n       if the user is greating you. \n       use this tool only if the primary intenet of the user is greeting only\n       not to use when primary intent is something else.\n       or do not use this if user want to book appointment\n       this tool take user input as tool arguments, if user ask anything other then the appointment or max eyr care and  if the users input is not related to booking appointment or eyecare. \n       Do not use this if user is sharing some details about them or details related to appointment like dates name phone no or email etc.", 'tool_args': "{'query': {'title': 'Query'}}, {'response': {'title': 'Response'}}, {'user_input': {'title': 'User Input'}}, {'user_query': {'title': 'User Query'}}", 'agent_scratchpad': '', 'practice': 'practice1', 'output': {'response_text': 'Hi there, Im here to help you with your eye care needs. How can I assist you today?', 'data_dict': {'FirstName': '', 'LastName': ''}, 'tool_used': 'greeting'}}[0m
+
+
+[1m> Entering new AgentExecutor chain...[0m
+
+
+[1m> Entering new RunnableSequence chain...[0m
+
+
+[1m> Entering new RunnableAssign<agent_scratchpad> chain...[0m
+
+
+[1m> Entering new RunnableParallel<agent_scratchpad> chain...[0m
+
+
+[1m> Entering new RunnableLambda chain...[0m
+
+[1m> Finished chain.[0m
+
+[1m> Finished chain.[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new PromptTemplate chain...[0m
+
+[1m> Finished chain.[0m
+
+
+[1m> Entering new ReActSingleInputOutputParser chain...[0m
+
+[1m> Finished chain.[0m
+
+[1m> Finished chain.[0m
+[32;1m[1;3m user_query = "book appointment"
+                 Action: fetch_info
+                Action Input: {'user_query': 'book appointment'}
+                
+                [0m[38;5;200m[1;3m{'FirstName': '', 'LastName': '', 'DateOfBirth': '', 'Email': '', 'PhoneNumber': '', 'PreferredDateOrTime': ''}[0m
+[32;1m[1;3m[0m
+
+[1m> Finished chain.[0m
+[32m2024-09-12 16:20:14.829[0m | [1mINFO    [0m | [36mchat_bot.views[0m:[36mhandle_user_input[0m:[36m1010[0m - [1m{'input': 'book appointment', 'tools': [StructuredTool(name='query_chroma_and_generate_response', description='this tool is extract the information related to organisation related query like address or any other relevant information related to organisation\n       Do not use this if user is sharing some details about them or details related to appointment like dates name phone no or email etc.\n        it want following arguments (query,practice)', args_schema=<class 'pydantic.v1.main.query_chroma_and_generate_responseSchema'>, return_direct=True, func=<function query_chroma_and_generate_response at 0x00000219476C76A0>), StructuredTool(name='fetch_info', description='this tool will extract the users information like FirstName, LastName, DateOfBirth, Email, PhoneNumber and PreferredDateOrTime from the given users input it can extract all at once or one at a time to book the appointment', args_schema=<class 'pydantic.v1.main.fetch_infoSchema'>, return_direct=True, func=<function fetch_info at 0x00000219476C7EC0>), StructuredTool(name='get_greeting_response', description="Respond to the user's greeting.\n       if the user is greating you. \n       use this tool only if the primary intenet of the user is greeting only\n       not to use when primary intent is something else.\n       or do not use this if user want to book appointment\n       this tool take user input as tool arguments", args_schema=<class 'pydantic.v1.main.get_greeting_responseSchema'>, return_direct=True, func=<function get_greeting_response at 0x00000219476C7740>), StructuredTool(name='generate_response', description='if user ask anything other then the appointment or max eyr care and  if the users input is not related to booking appointment or eyecare. \n       Do not use this if user is sharing some details about them or details related to appointment like dates name phone no or email etc.', args_schema=<class 'pydantic.v1.main.generate_responseSchema'>, return_direct=True, func=<function generate_response at 0x00000219476C7B00>)], 'tool_names': 'query_chroma_and_generate_response, fetch_info, get_greeting_response, generate_response', 'tool_description': "this tool is extract the information related to organisation related query like address or any other relevant information related to organisation\n       Do not use this if user is sharing some details about them or details related to appointment like dates name phone no or email etc.\n        it want following arguments (query,practice), this tool will extract the users information like FirstName, LastName, DateOfBirth, Email, PhoneNumber and PreferredDateOrTime from the given users input it can extract all at once or one at a time to book the appointment, Respond to the user's greeting.\n       if the user is greating you. \n       use this tool only if the primary intenet of the user is greeting only\n       not to use when primary intent is something else.\n       or do not use this if user want to book appointment\n       this tool take user input as tool arguments, if user ask anything other then the appointment or max eyr care and  if the users input is not related to booking appointment or eyecare. \n       Do not use this if user is sharing some details about them or details related to appointment like dates name phone no or email etc.", 'tool_args': "{'query': {'title': 'Query'}}, {'response': {'title': 'Response'}}, {'user_input': {'title': 'User Input'}}, {'user_query': {'title': 'User Query'}}", 'agent_scratchpad': 'User: hii\nBot: Hi there, Im here to help you with your eye care needs. How can I assist you today?\n', 'practice': 'practice1', 'output': {'FirstName': '', 'LastName': '', 'DateOfBirth': '', 'Email': '', 'PhoneNumber': '', 'PreferredDateOrTime': ''}}[0m
