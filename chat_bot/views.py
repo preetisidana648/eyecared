@@ -415,7 +415,9 @@ fetch_info.return_direct=True
 @tool
 def fetch_info_to_change(response):
     
-    """this tool will analyse what user want to change and  extract the users information like FirstName, LastName, DateOfBirth, Email, PhoneNumber and PreferredDateOrTime from the given users input it can extract all at once or one at a time  """
+    """this tool will analyse what user want to change and extract the users information like FirstName, LastName, DateOfBirth, Email, PhoneNumber and PreferredDateOrTime from the given users input it can extract all at once or one at a time 
+       do not use this 
+       """
     print(response,'action_input is ')
 
     
@@ -428,9 +430,10 @@ def fetch_info_to_change(response):
         instruction:
         -Do not add any things if not present in the given text, leave it empty.
         -Read the text carefully and extract filds that can be extracted from the given text.
-        -Always Provide proper indexing for each extracted field at the begining.
+        
         -Understand the user input carefully and extract anything you can for these fields (FirstName, LastName, DateOfBirth, Email, PhoneNumber and PreferredDateOrTime) from the user querry.
         -Do not change email and Phone no if they are incorrect Keep them as it is.
+        - First name or last name  can not be 0 or 1
         
  
         <|eot_id|>
@@ -764,7 +767,7 @@ def confirmation_intent(context):
     
     response_content_prompt = f"""
                 <|begin_of_text|><|start_header_id|>system<|end_header_id|>
-                identify what user wants fro user query querry 
+                identify what user wants from user query
                 Instructuion:
                 - If the user wants to change some thing return change
                 - If the user is verifying the information are correct return correcrt  
@@ -1219,7 +1222,13 @@ def handle_user_input(request,user_input,history,practice):
                             UserProfile.objects.filter(session_id=session_id).update(**{key:value})
                     except:
                         pass
+                    user_data = UserProfile.objects.filter(session_id=session_id).first()
+                    validation=validate_date(session_id,user_data.PreferredDateOrTime,user_data.DateOfBirth)
+                    if validation != True:
+                        return validation
                 request.session[f"step{session_id}"] = "input_new_value"
+                UserProfile.objects.filter(session_id=session_id).update(state=request.session[f"step{session_id}"])
+                
                 return handle_user_input(request,user_input,history,practice)
             
   
@@ -1475,7 +1484,7 @@ def handle_user_input(request,user_input,history,practice):
         #     else:
         #         return "Invalid slot ID. Please enter a valid ID from the list provided."
         except ValueError:
-            return "Invalid input. Please enter a numerical ID from the list provided."
+            return "Something went Wrong. Please Try again !"
                 
 
 
