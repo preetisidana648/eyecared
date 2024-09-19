@@ -25,8 +25,9 @@ import uuid
 from chat_bot.static_data import *
 logfile = "output.log"
 from langchain_core.callbacks import FileCallbackHandler, StdOutCallbackHandler
-from loguru import logger
+from loguru import logger 
 from django.http import HttpResponse
+# from langfuse.decorators import observe
  
 logger.add(logfile, colorize=True, enqueue=True)
 handler_1 = FileCallbackHandler(logfile)
@@ -106,7 +107,28 @@ headers = {
     "Content-Type": "application/json"
 }
 
+ 
+from langfuse.callback import CallbackHandler 
+import csv
+
+
+# chain.invoke({"input": "<user_input>"}, config={"callbacks": [langfuse_handler]})
+def token_count(prompt):
+    words = prompt.split()    
+    token_count = len(words) // 4
+    if len(words) % 4 != 0:
+        token_count += 1
+    print("---dddddddddddddd--",token_count)
+    return token_count
+
+CSV_FILENAME = 'prompts_and_tokens.csv'
+
+
 def call_huggingface_endpoint(prompt, api_url,  max_new_tokens,  do_sample, temperature, top_p ,max_length=512,retries=1, backoff_factor=0.3):
+    count=token_count(prompt)
+    with open(CSV_FILENAME, mode='a', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow([prompt, count])
     headers = {
         "Authorization": f"Bearer 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",
         "Content-Type": "application/json"
@@ -130,6 +152,10 @@ def call_huggingface_endpoint(prompt, api_url,  max_new_tokens,  do_sample, temp
                 response=(response.json()[0]["generated_text"]).split('Response:')[1]
             except:
                 response=(response.json()[0]["generated_text"])
+            count=token_count(response)
+            with open(CSV_FILENAME, mode='a', newline='') as file:
+                writer = csv.writer(file)
+                writer.writerow([response, count])    
             return response
         except requests.exceptions.RequestException as e:
             if attempt < retries - 1:
@@ -163,6 +189,7 @@ def format_appointment_date(date):
     response = call_huggingface_endpoint(model_prompt_for_appointment, api_url, 256 ,False  ,0.9 ,0.9)
     response_content = response[len(model_prompt_for_appointment):].strip()
     return response_content
+
 def transform_input(input_text):
     # Define a list of prompts to transform the input text
     modelPromptTotransform = f"""
@@ -180,7 +207,6 @@ def transform_input(input_text):
     response = response[len(modelPromptTotransform):].strip()
     print(response,'transformed response-----')
     return response
-
 
 def identify_intent_practice_question(user_query,data):
  
@@ -207,7 +233,6 @@ def identify_intent_practice_question(user_query,data):
     response = call_huggingface_endpoint(model_prompt_for_static_queries, api_url,150 ,True  ,0.6 ,0.9)
     response=response[len(model_prompt_for_static_queries):].strip()
     return response
- 
 
 @tool
 def short_queries(query):
@@ -356,7 +381,7 @@ def get_auth_token() -> str:
 @tool
 def fetch_info(response):
     
-    """this tool will extract the users information like FirstName, LastName, DateOfBirth, Email, PhoneNumber and PreferredDateOrTime from the given users input it can extract all at once or one at a time to book the appointment """
+    """this tool will extract the users information like FirstName, LastName, DateOfBirth, Email, PhoneNumber and PreferredDateOrTime from the given users input it can extract all at once or one at a time to book the appointment use this if user gives some personal info"""
     print(response,'action_input is ')
     
     
@@ -430,7 +455,6 @@ def fetch_info_to_change(response):
         instruction:
         -Do not add any things if not present in the given text, leave it empty.
         -Read the text carefully and extract filds that can be extracted from the given text.
-        
         -Understand the user input carefully and extract anything you can for these fields (FirstName, LastName, DateOfBirth, Email, PhoneNumber and PreferredDateOrTime) from the user querry.
         -Do not change email and Phone no if they are incorrect Keep them as it is.
         - First name or last name  can not be 0 or 1
@@ -913,6 +937,16 @@ def end_chat(session_id,request):
 
     return 'Done'
 
+def langfuse_handler__(session_id,user_id):
+    langfuse_handler_ = CallbackHandler(
+        public_key="pk-lf-f60e580e-73f2-485b-a32d-8c12b8042d1a",
+        secret_key="sk-lf-f6696b77-91c9-4f0a-8784-8c5bdb056a0c",
+        host="https://us.cloud.langfuse.com",
+        user_id=session_id,
+        session_id=user_id
+        
+    )
+    return langfuse_handler_
 
 def handle_user_input(request,user_input,history,practice):
     print("dfsfzgsfds",history)
@@ -974,15 +1008,15 @@ def handle_user_input(request,user_input,history,practice):
                 <|end_of_text|>
                     """
                 )
-                
+                 
                 ,input_variables=["input","tools","tool_names","tool_description",'tool_args','agent_scratchpad','practice'],
             )
 
-
+    
     tools=[fetch_info_to_change,query_chroma_and_generate_response,fetch_info,get_locations,get_providers,get_appointment_reasons,get_open_slots,sndotp,book_appointment,get_greeting_response,generate_response]
    
     agent = create_react_agent(llm, tools, prompt,stop_sequence=["Final Answer","Observation","short_queries is not a valid tool"])
-    agent_executor = AgentExecutor.from_agent_and_tools(agent=agent, tools=tools,verbose=True, handle_parsing_errors=True,max_iterations=1)
+    agent_executor = AgentExecutor.from_agent_and_tools(agent=agent, tools=tools,verbose=True, handle_parsing_errors=True,max_iterations=3)
     global state
     
     data = json.loads(request.body.decode('utf-8'))
@@ -990,6 +1024,10 @@ def handle_user_input(request,user_input,history,practice):
     session_id = data.get('session_id', '')
     request.session[f"step{session_id}"]=UserProfile.objects.get(session_id=session_id).state
     print(request.session[f"step{session_id}"],'selected state -----',session_id)
+    
+    langfuse_handler=langfuse_handler__(request.session.get('guest_username', 'Guest'),session_id)
+    
+    
     if request.session[f"step{session_id}"] == "start":
         if user_input:
             tools=verify_tools(request,practice)
@@ -1007,9 +1045,9 @@ def handle_user_input(request,user_input,history,practice):
             tool_args=", ".join([str(t.args) for t in tools])
           
             try:
-                result=agent_executor.invoke({"input": user_input,'tools':tools,"tool_names":Tools_names,"tool_description":tool_description,'tool_args':tool_args,'agent_scratchpad':history,'practice':practice}, {"callbacks": [handler_1, handler_2]})
+                result=agent_executor.invoke({"input": user_input,'tools':tools,"tool_names":Tools_names,"tool_description":tool_description,'tool_args':tool_args,'agent_scratchpad':history,'practice':practice}, {"callbacks": [langfuse_handler,handler_1, handler_2]})
             except:
-                result=agent_executor.invoke({"input": user_input,'tools':tools,"tool_names":Tools_names,"tool_description":tool_description,'tool_args':tool_args,'agent_scratchpad':history,'practice':practice}, {"callbacks": [handler_1, handler_2]})
+                result=agent_executor.invoke({"input": user_input,'tools':tools,"tool_names":Tools_names,"tool_description":tool_description,'tool_args':tool_args,'agent_scratchpad':history,'practice':practice}, {"callbacks": [langfuse_handler,handler_1, handler_2]})
  
            
             logger.info(result)
@@ -1147,7 +1185,7 @@ def handle_user_input(request,user_input,history,practice):
                     "tool_names": "sndotp",
                     "tool_description": sndotp.description,
                     "tool_args": json.dumps({"FirstName": user_data.FirstName,"LastName": user_data.LastName,"PhoneNumber": user_data.PhoneNumber,"DOB": user_data.DateOfBirth,"Email": user_data.Email}),                
-                    "agent_scratchpad": " ",
+                    "agent_scratchpad": history,
                     "practice":practice
 
                     })
@@ -1158,7 +1196,7 @@ def handle_user_input(request,user_input,history,practice):
                     "tool_names": "sndotp",
                     "tool_description": sndotp.description,
                     "tool_args": json.dumps({"FirstName": user_data.FirstName,"LastName": user_data.LastName,"PhoneNumber": user_data.PhoneNumber,"DOB": user_data.DateOfBirth,"Email": user_data.Email}),                
-                    "agent_scratchpad": " ",
+                    "agent_scratchpad": history,
                     "practice":practice
                     })
 
@@ -1183,7 +1221,8 @@ def handle_user_input(request,user_input,history,practice):
                     "tool_names": "sndotp",
                     "tool_description": sndotp.description,
                     "tool_args": json.dumps({"FirstName": user_data.FirstName,"LastName": user_data.LastName,"PhoneNumber": user_data.PhoneNumber,"DOB": user_data.DateOfBirth,"Email": user_data.Email}),                
-                    "agent_scratchpad": " "
+                    "agent_scratchpad": " ",
+                     "practice":practice
                     })
             
                 request.session[f"step{session_id}"] = "otp_verification"
@@ -1199,7 +1238,7 @@ def handle_user_input(request,user_input,history,practice):
                     "tool_names": "fetch_info_to_change",
                     "tool_description": fetch_info_to_change.description,
                     "tool_args": json.dumps(user_input),
-                    "agent_scratchpad": "",
+                    "agent_scratchpad": history,
                     "practice":practice
                 })
                 data = json.loads(request.body.decode('utf-8'))
@@ -1226,9 +1265,21 @@ def handle_user_input(request,user_input,history,practice):
                     validation=validate_date(session_id,user_data.PreferredDateOrTime,user_data.DateOfBirth)
                     if validation != True:
                         return validation
+                
+                user_data = UserProfile.objects.filter(session_id=session_id).first()
+                if not validate_phone(user_data.PhoneNumber):
+                    UserProfile.objects.filter(session_id=session_id).update(PhoneNumber='na' )
+                    prompt = f"Please provide a valid Phone Number. The number you provided is not valid."
+                    result=transform_input(prompt)
+                    return result
+                if not validate_email(user_data.Email):
+                    UserProfile.objects.filter(session_id=session_id).update(Email='na' )
+                    prompt = f"Please provide a valid Email. The email you provided is not valid."
+                    result=transform_input(prompt)
+                    print("-------d--------",result)
+                    return result
                 request.session[f"step{session_id}"] = "input_new_value"
                 UserProfile.objects.filter(session_id=session_id).update(state=request.session[f"step{session_id}"])
-                
                 return handle_user_input(request,user_input,history,practice)
             
   
@@ -1240,6 +1291,9 @@ def handle_user_input(request,user_input,history,practice):
         except:
             pass
         user_data = UserProfile.objects.filter(session_id=session_id).first()
+        
+        print("hhhhhhhh",user_data)
+        print(user_data.Email,"ffffffffffffffffffffffff")
         confirmation_message = (
             f"Here are the updated details:\n"
             f"Date and Time: {user_data.PreferredDateOrTime}\n"
@@ -1428,6 +1482,7 @@ def handle_user_input(request,user_input,history,practice):
             if open_slots:
                 request.session[f"step{session_id}"] = "slot_selection"
                 request.session[f"open_slots{session_id}"] = open_slots
+                UserProfile.objects.filter(session_id=session_id).update(state=request.session[f"step{session_id}"])
                 return open_slots
             else:
                 return "No open slots available. Please try again later."
@@ -1470,24 +1525,23 @@ def handle_user_input(request,user_input,history,practice):
                 # print(restult)
                 # data=ChatHistory.objects.filter(session_id=session_id)
                 # data.delete()
-                data=UserProfile.objects.filter(session_id=session_id)
-                data.delete()
+                # data=UserProfile.objects.filter(session_id=session_id)
+                # data.delete()
 
 
-                request.session[f"step{session_id}"] = "start"
                 
-                return booking_response
                 # if booking_response.get("Status") == "Success":
                     # return f"Your appointment has been booked successfully. Appointment ID: {booking_response['AppointmentId']}"
         #         else:
         #             return "Failed to book the appointment. Please try again."
         #     else:
         #         return "Invalid slot ID. Please enter a valid ID from the list provided."
-        except ValueError:
-            return "Something went Wrong. Please Try again !"
+        except :
+            return "Something went Wrong. Please Enter slot id  again !"
+        request.session[f"step{session_id}"] = "start"
+        UserProfile.objects.filter(session_id=session_id).update(state=request.session[f"step{session_id}"])
+        return booking_response
                 
-
-
 def get_chat_history( session_id):
     chat_history = ChatHistory.objects.filter(session_id=session_id).order_by('timestamp')
     # Format chat history for response
@@ -1499,6 +1553,10 @@ def get_chat_history( session_id):
 def home(request):
     request.session[f'session_id1'] = str(uuid.uuid4())
     session_id=request.session[f'session_id1'] 
+    
+    guest_username = request.session.get('guest_username', 'Guest')
+   
+    username = guest_username
     return render(request, "home.html",{'session_id':session_id})
 def home_practice(request,id):
     print(type(id))
@@ -1532,7 +1590,7 @@ def chatbot_view(request):
             print('excepting')
             request.session[f"step{session_id}"]='start'
         history=get_chat_history( session_id)
-
+        
         
         user=UserProfile.objects.filter(session_id=session_id)  
         if not user:
