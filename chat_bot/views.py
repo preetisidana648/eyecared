@@ -1153,6 +1153,7 @@ def handle_user_input(request,user_input,history,practice):
                         f"Is this information correct? (yes/no)"
                     )
                     request.session[f"step{session_id}"] = "confirmation"
+                    UserProfile.objects.filter(session_id=session_id).update(state=request.session[f"step{session_id}"])
                     return confirmation_message
             else:
                 
@@ -1201,6 +1202,7 @@ def handle_user_input(request,user_input,history,practice):
                     })
 
             request.session[f"step{session_id}"] = "otp_verification"
+            UserProfile.objects.filter(session_id=session_id).update(state=request.session[f"step{session_id}"])
             result=" Please enter the OTP to proceed."
             result=transform_input(result)
             return result
@@ -1226,6 +1228,7 @@ def handle_user_input(request,user_input,history,practice):
                     })
             
                 request.session[f"step{session_id}"] = "otp_verification"
+                UserProfile.objects.filter(session_id=session_id).update(state=request.session[f"step{session_id}"])
                 return f" Please enter the OTP to proceed."
             elif intent.lower().strip()=='incorrect':  
                 result="What would you like to edit?(FirstName, LastName, DateOfBirth, PhoneNumber, Email, or PreferredDateOrTime)."
@@ -1304,6 +1307,7 @@ def handle_user_input(request,user_input,history,practice):
             f"Is this information correct? (yes/no)"
         )
         request.session[f"step{session_id}"] = "confirmation"
+        UserProfile.objects.filter(session_id=session_id).update(state=request.session[f"step{session_id}"])
         return confirmation_message
  
     elif request.session[f"step{session_id}"] == "otp_verification":
@@ -1344,6 +1348,7 @@ def handle_user_input(request,user_input,history,practice):
             validation_result = validate_otp_response.json()
             if validation_result.get("Isvalidated"):
                 request.session[f"step{session_id}"] = "confirmed_otp"
+                UserProfile.objects.filter(session_id=session_id).update(state=request.session[f"step{session_id}"])
                 # Fetch locations after OTP confirmation
                 print("reeeeeesgkndksznk")
                 result = agent_executor.invoke({
@@ -1360,6 +1365,8 @@ def handle_user_input(request,user_input,history,practice):
                 request.session[f"locations{session_id}"] = locations
                 UserProfile.objects.filter(session_id=session_id).update(locations=locations)
                 request.session[f"step{session_id}"] = "location_selection"
+                UserProfile.objects.filter(session_id=session_id).update(state=request.session[f"step{session_id}"])
+                
                 return locations
                
             else:
@@ -1408,6 +1415,7 @@ def handle_user_input(request,user_input,history,practice):
        
                 request.session[f"providers{session_id}"] = providers
                 UserProfile.objects.filter(session_id=session_id).update(providers=providers)
+                UserProfile.objects.filter(session_id=session_id).update(state=request.session[f"step{session_id}"])
                 return providers
             else:
                 return "Invalid Location ID. Please enter a Location ID from the list provided."
@@ -1452,6 +1460,7 @@ def handle_user_input(request,user_input,history,practice):
                 request.session[f"step{session_id}"] = "appointment_reason_selection"
                 request.session[f"appointment_reasons{session_id}"] = appointment_reasons
                 UserProfile.objects.filter(session_id=session_id).update(appointment_reasons=appointment_reasons)
+                UserProfile.objects.filter(session_id=session_id).update(state=request.session[f"step{session_id}"])
                 return appointment_reasons
  
             else:
