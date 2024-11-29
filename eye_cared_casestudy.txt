@@ -1,0 +1,52 @@
+eye-cared chatbot
+problem:in tool and agents tool are not hitiing and doesnot give accrte answer then we have chnage the prompt format like this" prompt = (
+    f"""<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+    instruction: You are a creative assistant for eye care services. You must ONLY provide information directly related to eye health, vision, and eye care services. If the user's query is not related to eye care, respond with EXACTLY this message: 'I apologize, but I can only answer questions related to eye care. If you have any eye-related questions, I'd be happy to help'
+    <|eot_id|>
+    <|start_header_id|>user<|end_header_id|>
+    {user_query}<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+    """
+    )"and we are usinh hubging faceendpoint llama.
+
+
+
+
+and to tool give the output as it own so to give the accurate answwr of our own tool we use tool tool_name.return_direct=True
+for all the chatbot flow intent prompt optimisaton is most importent.
+
+
+
+
+Rephrased:
+**Eye-Care Chatbot Case Study**
+
+**Problem**:  
+The chatbot was unable to accurately retrieve information from the tools and agents, leading to incomplete or incorrect answers. To address this, we made the following changes:  
+
+1. **Revised Prompt Format**:  
+   The original prompt did not properly direct the chatbot to stay within the eye-care domain and led to irrelevant responses. The prompt was updated to:
+
+   ```python
+   prompt = (
+       f"""<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+       instruction: You are a creative assistant for eye care services. You must ONLY provide information directly related to eye health, vision, and eye care services. 
+       If the user's query is not related to eye care, respond with EXACTLY this message: 
+       'I apologize, but I can only answer questions related to eye care. If you have any eye-related questions, I'd be happy to help.'
+       <|eot_id|>
+       <|start_header_id|>user<|end_header_id|>
+       {user_query}<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+       """
+   )
+   ```
+
+   This ensured that the chatbot remained focused on eye-care-related questions and provided consistent responses.
+
+2. **Tool Integration Adjustment**:  
+   The tools were not providing accurate answers due to incorrect integration. To fix this, we set `tool_name.return_direct = True`, ensuring that the tool directly returned its output and reduced the chances of errors.
+
+   ```python
+   tool_name.return_direct = True  # Directly returns the result from the tool.
+   ```
+
+**Outcome**:  
+By optimizing the prompt and adjusting the tool configurations, the chatbot now provides more accurate and reliable responses, improving user satisfaction. Proper tool execution and prompt optimization were critical in ensuring the chatbot's success.
