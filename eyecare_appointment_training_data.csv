@@ -1,0 +1,786 @@
+Human Message 1,Chatbot Response 1,Human Message 2,Chatbot Response 2,Human Message 3,Chatbot Response 3,Human Message 4,Chatbot Response 4,Human Message 5,Chatbot Response 5,Human Message 6,Chatbot Response 6,Human Message 7,Chatbot Response 7,Human Message 8,Chatbot Response 8,Human Message 9,Chatbot Response 9,Human Message 10,Chatbot Response 10,Human Message 10,Chatbot Response 10,Human Message 11,Chatbot Response 11,Human Message 12,Chatbot Response 12,Human Message 13,Chatbot Response 13
+"Hello, this is Alice Johnson. I'd like to book an appointment for an eye check-up. My details are as follows: Name: Alice Johnson, DOB: March 10, 1985, Preferred Appointment Date: September 5, 2024, Preferred Time: Morning, Reason for Visit: Regular eye check-up.",Thank you for sharing your details. Could you please provide your phone number and email address?,"Phone Number: 1234567890, Email: alice.johnson@example.com","Please confirm: Phone Number: 1234567890, Email: alice.johnson@example.com","Yes, that's correct.",Thanks. We've sent an OTP to your registered email and phone number. Please enter the OTP.,7890,"OTP verified. Please select a provider: Dr. Michael Lee, Dr. Sarah Brown, Dr. James Wilson.",<Selects Dr. Sarah Brown>,"Available slots on September 5, 2024: 8:00 AM - 8:20 AM, 9:00 AM - 9:20 AM, 10:00 AM - 10:20 AM.",<Selects 9:00 AM appointment>,"Please confirm: Name: Alice Johnson, DOB: March 10, 1985, Contact: 1234567890, Email: alice.johnson@example.com, Appointment: September 5, 2024, 9:00 AM, Provider: Dr. Sarah Brown, Reason: Regular eye check-up.",Everything looks good.,Your appointment is scheduled. Is there anything else I can help you with?,"No, that's all. Thank you!",You're welcome! Have a great day!,,,,,,,,,,,,
+"Hi, I'm Robert King. I need to schedule an appointment at the eyecare clinic. I'm having trouble with my right eye. Details: Name: Robert King, DOB: July 20, 1970, Preferred Appointment Date: October 10, 2024, Preferred Time: Afternoon, Reason: Right eye discomfort.",Thank you for your details. Could you please provide your phone number and email?,"Phone Number: 9876543210, Email: robert.king@example.com","Please confirm: Phone Number: 9876543210, Email: robert.king@example.com","Yes, it's correct.",An OTP has been sent to your registered email and phone number. Please enter the OTP.,4567,"OTP verified. Please select a provider: Dr. Emily White, Dr. David Clark, Dr. Linda Green.",<Selects Dr. David Clark>,"Available slots on October 10, 2024: 1:00 PM - 1:20 PM, 2:00 PM - 2:20 PM, 3:00 PM - 3:20 PM.",<Selects 1:00 PM appointment>,"Please confirm: Name: Robert King, DOB: July 20, 1970, Contact: 9876543210, Email: robert.king@example.com, Appointment: October 10, 2024, 1:00 PM, Provider: Dr. David Clark, Reason: Right eye discomfort.","Actually, can you change it to 2:00 PM?","Sure! Updated to 2:00 PM. Confirming: Name: Robert King, DOB: July 20, 1970, Contact: 9876543210, Email: robert.king@example.com, Appointment: October 10, 2024, 2:00 PM, Provider: Dr. David Clark, Reason: Right eye discomfort.","Yes, that's correct.",Your appointment is scheduled. Is there anything else I can assist with?,"No, thank you.",You're welcome! Have a great day!,,,,,,,,,,
+"Hello, this is Patient 3. I'd like to book an appointment for an eye check-up. My details are as follows: Name: Patient 3, DOB: January 1, 1990, Preferred Appointment Date: October 5, 2024, Preferred Time: Afternoon, Reason for Visit: Eye discomfort.",Thank you for sharing your details. Could you please provide your phone number and email address?,"Phone Number: 3234567890, Email: patient3@example.com","Please confirm: Phone Number: 3234567890, Email: patient3@example.com","Yes, that's correct.",Thanks. We've sent an OTP to your registered email and phone number. Please enter the OTP.,3456,"OTP verified. Please select a provider: Dr. Emily White, Dr. David Clark, Dr. Linda Green.",<Selects Dr. Linda Green>,"Available slots on October 5, 2024: 2:00 PM - 2:20 PM, 3:00 PM - 3:20 PM, 4:00 PM - 4:20 PM.",<Selects 2:00 PM appointment>,"Please confirm: Name: Patient 3, DOB: January 1, 1990, Contact: 3234567890, Email: patient3@example.com, Appointment: October 5, 2024, 2:00 PM, Provider: Dr. Linda Green, Reason: Eye discomfort.",Everything looks good.,Your appointment is scheduled. Is there anything else I can help you with?,"No, that's all. Thank you!",You're welcome! Have a great day!,,,,,,,,,,,,
+"Hello, this is Patient 4. I'd like to book an appointment for an eye check-up. My details are as follows: Name: Patient 4, DOB: January 1, 1990, Preferred Appointment Date: October 6, 2024, Preferred Time: Afternoon, Reason for Visit: Eye discomfort.",Thank you for sharing your details. Could you please provide your phone number and email address?,"Phone Number: 4234567890, Email: patient4@example.com","Please confirm: Phone Number: 4234567890, Email: patient4@example.com","Yes, that's correct.",Thanks. We've sent an OTP to your registered email and phone number. Please enter the OTP.,4456,"OTP verified. Please select a provider: Dr. Emily White, Dr. David Clark, Dr. Linda Green.",<Selects Dr. Linda Green>,"Available slots on October 6, 2024: 2:00 PM - 2:20 PM, 3:00 PM - 3:20 PM, 4:00 PM - 4:20 PM.",<Selects 2:00 PM appointment>,"Please confirm: Name: Patient 4, DOB: January 1, 1990, Contact: 4234567890, Email: patient4@example.com, Appointment: October 6, 2024, 2:00 PM, Provider: Dr. Linda Green, Reason: Eye discomfort.",Everything looks good.,Your appointment is scheduled. Is there anything else I can help you with?,"No, that's all. Thank you!",You're welcome! Have a great day!,,,,,,,,,,,,
+"Hello, this is Patient 5. I'd like to book an appointment for an eye check-up. My details are as follows: Name: Patient 5, DOB: January 1, 1990, Preferred Appointment Date: October 7, 2024, Preferred Time: Afternoon, Reason for Visit: Eye discomfort.",Thank you for sharing your details. Could you please provide your phone number and email address?,"Phone Number: 5234567890, Email: patient5@example.com","Please confirm: Phone Number: 5234567890, Email: patient5@example.com","Yes, that's correct.",Thanks. We've sent an OTP to your registered email and phone number. Please enter the OTP.,5456,"OTP verified. Please select a provider: Dr. Emily White, Dr. David Clark, Dr. Linda Green.",<Selects Dr. Linda Green>,"Available slots on October 7, 2024: 2:00 PM - 2:20 PM, 3:00 PM - 3:20 PM, 4:00 PM - 4:20 PM.",<Selects 2:00 PM appointment>,"Please confirm: Name: Patient 5, DOB: January 1, 1990, Contact: 5234567890, Email: patient5@example.com, Appointment: October 7, 2024, 2:00 PM, Provider: Dr. Linda Green, Reason: Eye discomfort.",Everything looks good.,Your appointment is scheduled. Is there anything else I can help you with?,"No, that's all. Thank you!",You're welcome! Have a great day!,,,,,,,,,,,,
+"Hello, this is Olivia Brown calling to book an eye examination appointment for my child at the eyecare hospital. My child has been experiencing some difficulty seeing the board at school. Here are the details:
+Parent's Name: Olivia Brown
+Child's Name: Lily Brown
+DOB: June 1, 2012
+Preferred Appointment Date: next tuesday
+Preferred Time: Afternoon, if possible
+Reason for Visit: Difficulty seeing the board at school
+Please call me back at your earliest convenience to confirm the appointment or suggest an alternative time if my preferred slot is not available. You can reach me at the contact number provided above. Thank you.
+Best regards,
+Olivia Brown
+(555) 789-0123","Ok, thank you for sharing the details. Can you please help provide an email address and Date Of Birth?","test@first-insight.com , DOB is December 5, 2000","Can you please confirm the following contact details
+Phone Number: (555) 789-0123
+Email: test@first-insight.com
+DOB: 12-05-2000",Yes it's correct,"Thanks for the details, We have sent you the OTP on the registered email and Phone Number, Can you please enter the OTP",1111,"Thanks for the validation, Please choose providers from the list:
+? Dr. Emily Thompson
+? Dr. Mark Davis
+? Dr. Susan Lee",I'll go with Dr. Emily Thompson.,"Ok, thank you for sharing the details. Let me check the availability of the appointment. I see the following open slots on June 18, 2024: 2:00 PM, 2:20 PM, 3:00 PM.",Let's book the 2:00 PM appointment.,"Alright! Can you please confirm the following details once:
+Patient Information:
+Parent's Name: Olivia Brown
+Child's Name: Lily Brown
+Date of Birth: December 5, 2000
+Contact Number: (555) 789-0123
+Appointment Details:
+Date: June 18, 2024
+Time: 2:00 PM
+Provider: Dr. Emily Thompson
+Reason for Visit: Difficulty seeing the board at school","Yes, they are correct!","Your Appointment is scheduled, Thanks for choosing eyecare location! Is there anything I can help you with?",Nothing as of now.,"Thanks, Have a great day!",,,,,,,,,,,,
+"Hello, this is Sarah Johnson calling to book an eye examination appointment for my daughter at the eyecare hospital. My daughter has been complaining about headaches after reading. Here are the details:
+Parent's Name: Sarah Johnson
+Child's Name: Mia Johnson
+DOB: July 14, 2014
+Preferred Appointment Date: next Thursday
+Preferred Time: Morning, if possible
+Reason for Visit: Headaches after reading
+Please call me back at your earliest convenience to confirm the appointment or suggest an alternative time if my preferred slot is not available. You can reach me at the contact number provided above. Thank you.
+Best regards,
+Sarah Johnson
+(555) 987-6543","Ok, thank you for sharing the details. Can you please help provide an email address and Date Of Birth?","sarah.johnson@test.com, DOB is January 12, 1985","Can you please confirm the following contact details
+Phone Number: (555) 987-6543
+Email: sarah.johnson@test.com
+DOB: 01-12-1985",Yes it's correct,"Thanks for the details, We have sent you the OTP on the registered email and Phone Number, Can you please enter the OTP",2222,"Thanks for the validation, Please choose providers from the list:
+? Dr. Michael Green
+? Dr. Emily Thompson
+? Dr. Susan Lee",I'll go with Dr. Michael Green.,"Ok, thank you for sharing the details. Let me check the availability of the appointment. I see the following open slots on June 20, 2024: 9:00 AM, 9:30 AM, 10:00 AM.",Let's book the 9:00 AM appointment.,"Alright! Can you please confirm the following details once:
+Patient Information:
+Parent's Name: Sarah Johnson
+Child's Name: Mia Johnson
+Date of Birth: January 12, 1985
+Contact Number: (555) 987-6543
+Appointment Details:
+Date: June 20, 2024
+Time: 9:00 AM
+Provider: Dr. Michael Green
+Reason for Visit: Headaches after reading","Yes, they are correct!","Your Appointment is scheduled, Thanks for choosing eyecare location! Is there anything I can help you with?",Nothing as of now.,"Thanks, Have a great day!",,,,,,,,,,,,
+"Hello, this is James Miller calling to book an eye examination appointment for my son at the eyecare hospital. My son has been struggling to read small print. Here are the details:
+Parent's Name: James Miller
+Child's Name: Ethan Miller
+DOB: March 22, 2013
+Preferred Appointment Date: next Wednesday
+Preferred Time: Afternoon, if possible
+Reason for Visit: Difficulty reading small print
+Please call me back at your earliest convenience to confirm the appointment or suggest an alternative time if my preferred slot is not available. You can reach me at the contact number provided above. Thank you.
+Best regards,
+James Miller
+(555) 345-6789","Ok, thank you for sharing the details. Can you please help provide an email address and Date Of Birth?","james.miller@sample.com, DOB is April 15, 1982","Can you please confirm the following contact details
+Phone Number: (555) 345-6789
+Email: james.miller@sample.com
+DOB: 04-15-1982",Yes it's correct,"Thanks for the details, We have sent you the OTP on the registered email and Phone Number, Can you please enter the OTP",3333,"Thanks for the validation, Please choose providers from the list:
+? Dr. Mark Davis
+? Dr. Emily Thompson
+? Dr. Laura White",I'll go with Dr. Laura White.,"Ok, thank you for sharing the details. Let me check the availability of the appointment. I see the following open slots on June 19, 2024: 1:00 PM, 1:30 PM, 2:00 PM.",Let's book the 1:00 PM appointment.,"Alright! Can you please confirm the following details once:
+Patient Information:
+Parent's Name: James Miller
+Child's Name: Ethan Miller
+Date of Birth: April 15, 1982
+Contact Number: (555) 345-6789
+Appointment Details:
+Date: June 19, 2024
+Time: 1:00 PM
+Provider: Dr. Laura White
+Reason for Visit: Difficulty reading small print","Yes, they are correct!","Your Appointment is scheduled, Thanks for choosing eyecare location! Is there anything I can help you with?",Nothing as of now.,"Thanks, Have a great day!",,,,,,,,,,,,
+"Hello, this is Emily Harris calling to book an eye examination appointment for my son at the eyecare hospital. My son has been experiencing blurry vision while playing sports. Here are the details:
+Parent's Name: Emily Harris
+Child's Name: Noah Harris
+DOB: October 30, 2015
+Preferred Appointment Date: next Friday
+Preferred Time: Evening, if possible
+Reason for Visit: Blurry vision while playing sports
+Please call me back at your earliest convenience to confirm the appointment or suggest an alternative time if my preferred slot is not available. You can reach me at the contact number provided above. Thank you.
+Best regards,
+Emily Harris
+(555) 678-9012","Ok, thank you for sharing the details. Can you please help provide an email address and Date Of Birth?","emily.harris@testmail.com, DOB is May 20, 1987","Can you please confirm the following contact details
+Phone Number: (555) 678-9012
+Email: emily.harris@testmail.com
+DOB: 05-20-1987",Yes it's correct,"Thanks for the details, We have sent you the OTP on the registered email and Phone Number, Can you please enter the OTP",4444,"Thanks for the validation, Please choose providers from the list:
+? Dr. Susan Lee
+? Dr. Mark Davis
+? Dr. John Smith",I'll go with Dr. Susan Lee.,"Ok, thank you for sharing the details. Let me check the availability of the appointment. I see the following open slots on June 21, 2024: 5:00 PM, 5:30 PM, 6:00 PM.",Let's book the 5:00 PM appointment.,"Alright! Can you please confirm the following details once:
+Patient Information:
+Parent's Name: Emily Harris
+Child's Name: Noah Harris
+Date of Birth: May 20, 1987
+Contact Number: (555) 678-9012
+Appointment Details:
+Date: June 21, 2024
+Time: 5:00 PM
+Provider: Dr. Susan Lee
+Reason for Visit: Blurry vision while playing sports","Yes, they are correct!","Your Appointment is scheduled, Thanks for choosing eyecare location! Is there anything I can help you with?",Nothing as of now.,"Thanks, Have a great day!",,,,,,,,,,,,
+"Hello, this is Laura Clark calling to book an eye examination appointment for my daughter at the eyecare hospital. My daughter has been squinting a lot while watching TV. Here are the details:
+Parent's Name: Laura Clark
+Child's Name: Ava Clark
+DOB: November 10, 2016
+Preferred Appointment Date: next Monday
+Preferred Time: Late morning, if possible
+Reason for Visit: Squinting while watching TV
+Please call me back at your earliest convenience to confirm the appointment or suggest an alternative time if my preferred slot is not available. You can reach me at the contact number provided above. Thank you.
+Best regards,
+Laura Clark
+(555) 123-4567","Ok, thank you for sharing the details. Can you please help provide an email address and Date Of Birth?","laura.clark@mailbox.com, DOB is February 14, 1980","Can you please confirm the following contact details
+Phone Number: (555) 123-4567
+Email: laura.clark@mailbox.com
+DOB: 02-14-1980",Yes it's correct,"Thanks for the details, We have sent you the OTP on the registered email and Phone Number, Can you please enter the OTP",5555,"Thanks for the validation, Please choose providers from the list:
+? Dr. Emily Thompson
+? Dr. Michael Green
+? Dr. John Smith",I'll go with Dr. Emily Thompson.,"Ok, thank you for sharing the details. Let me check the availability of the appointment. I see the following open slots on June 17, 2024: 10:00 AM, 10:30 AM, 11:00 AM.",Let's book the 10:30 AM appointment.,"Alright! Can you please confirm the following details once:
+Patient Information:
+Parent's Name: Laura Clark
+Child's Name: Ava Clark
+Date of Birth: February 14, 1980
+Contact Number: (555) 123-4567
+Appointment Details:
+Date: June 17, 2024
+Time: 10:30 AM
+Provider: Dr. Emily Thompson
+Reason for Visit: Squinting while watching TV","Yes, they are correct!","Your Appointment is scheduled, Thanks for choosing eyecare location! Is there anything I can help you with?",Nothing as of now.,"Thanks, Have a great day!",,,,,,,,,,,,
+"Hello, I need to book an appointment.","Sure, I can help with that. Could you please provide your name, DOB, Phone number and Email and the reason for your visit?",It's John.,"Thank you, John. Can I have your full name (First Name and Last Name) and date of birth?","Uh, John... I think it's in your system.","To ensure we have the correct information, I'll need your full name (First Name and Last Name) and date of birth. This helps us locate your records accurately.","Oh, okay. It's Johnathan Smith. I was born on April 3rd, 1982.",Thank you. Could you please provide a contact number and email?,"Um, hold on. I think it's... (555) 123... 7890? And I don't have an email address.","Thank you. Just to confirm, your contact number is (555) 123-7890, correct?","Yes, that's right.","Thanks for the details, We have sent you the OTP on the registered Phone Number. Can you please enter the OTP?",1111,"Thanks for the validation, Please choose the appointment Reason from the following: <<show cards>>",Select one card.,Great. Do you have any preferred dates and times for your appointment?,Anytime next week is fine.,"Okay, let me check our availability for next week. Do you prefer mornings or afternoons?","Uh, mornings, I guess.","Please choose a provider from the list:
+● Dr. Robert Anderson
+● Dr. Laura Bennett
+● Dr. Michael Clark",I'll choose Dr. Robert Anderson.,"I see the following open slots for next week: Monday, 10:00 AM; Wednesday, 10:20 AM; Friday, 10:40 AM.","Let's book the Monday, 10:00 AM appointment.","Alright! Can you please confirm the following details once:
+Patient Information:
+Name: Johnathan Smith
+Date of Birth: April 3, 1982
+Contact Number: (555) 123-7890
+Appointment Details:
+Date: Monday, next week (June 3, 2024)
+Time: 10:00 AM
+Provider: Dr. Robert Anderson
+Reason for Visit: Blurry vision","Yes, they are correct!","Your Appointment is scheduled, Thanks for choosing eyecare location! Is there anything I can help you with?",Nothing as of now.,"Thanks, Have a great day!"
+"Hi, I'd like to book an appointment, please.","Sure, I can assist you with that. Could you please provide your name, DOB, Phone number and Email, and the reason for your visit?",It's Mike.,"Thank you, Mike. Can I have your full name (First Name and Last Name) and date of birth?","Uh, Mike... It should be in your system.","To ensure we have the correct information, I'll need your full name (First Name and Last Name) and date of birth. This helps us locate your records accurately.","Oh, okay. It's Michael Johnson. I was born on May 12th, 1975.",Thank you. Could you please provide a contact number and email?,"Um, hold on. It's... (555) 987... 6543? And I don't have an email address.","Thank you. Just to confirm, your contact number is (555) 987-6543, correct?","Yes, that's right.","Thanks for the details, We have sent you the OTP on the registered Phone Number. Can you please enter the OTP?",2222,"Thanks for the validation, Please choose the appointment Reason from the following: <<show cards>>",Select one card.,Great. Do you have any preferred dates and times for your appointment?,Anytime next week is fine.,"Okay, let me check our availability for next week. Do you prefer mornings or afternoons?","Uh, afternoons, I guess.","Please choose a provider from the list:
+● Dr. Sarah Lee
+● Dr. John Adams
+● Dr. Emma Davis",I'll choose Dr. Sarah Lee.,"I see the following open slots for next week: Tuesday, 2:00 PM; Thursday, 2:20 PM; Friday, 3:00 PM.","Let's book the Tuesday, 2:00 PM appointment.","Alright! Can you please confirm the following details once:
+Patient Information:
+Name: Michael Johnson
+Date of Birth: May 12, 1975
+Contact Number: (555) 987-6543
+Appointment Details:
+Date: Tuesday, next week (June 4, 2024)
+Time: 2:00 PM
+Provider: Dr. Sarah Lee
+Reason for Visit: Blurry vision","Yes, they are correct!","Your Appointment is scheduled, Thanks for choosing eyecare location! Is there anything I can help you with?",Nothing as of now.,"Thanks, Have a great day!"
+"Hello, I'd like to book an eye check-up.","Sure, I can help with that. Could you please provide your name, DOB, Phone number and Email and the reason for your visit?",It's David.,"Thank you, David. Can I have your full name (First Name and Last Name) and date of birth?","Uh, I think it's David... I don't remember the details.","To ensure we have the correct information, I'll need your full name (First Name and Last Name) and date of birth. This helps us locate your records accurately.","Oh, right. It's David Martinez. I was born on June 21st, 1985.",Thank you. Could you please provide a contact number and email?,"Um, it's... (555) 234... 5678? And I don't have an email address.","Thank you. Just to confirm, your contact number is (555) 234-5678, correct?","Yes, that's right.","Thanks for the details, We have sent you the OTP on the registered Phone Number. Can you please enter the OTP?",3333,"Thanks for the validation, Please choose the appointment Reason from the following: <<show cards>>",Select one card.,Great. Do you have any preferred dates and times for your appointment?,Anytime next week is good.,"Okay, let me check our availability for next week. Do you prefer mornings or afternoons?","Uh, afternoons, I guess.","Please choose a provider from the list:
+● Dr. Robert Anderson
+● Dr. Emily Davis
+● Dr. Michael Lee",I'll choose Dr. Robert Anderson.,"I see the following open slots for next week: Tuesday, 2:00 PM; Thursday, 2:20 PM; Friday, 2:40 PM.","Let's book the Tuesday, 2:00 PM appointment.","Alright! Can you please confirm the following details once:
+Patient Information:
+Name: David Martinez
+Date of Birth: June 21, 1985
+Contact Number: (555) 234-5678
+Appointment Details:
+Date: Tuesday, next week (June 4, 2024)
+Time: 2:00 PM
+Provider: Dr. Robert Anderson
+Reason for Visit: Blurry vision","Yes, they are correct!","Your Appointment is scheduled, Thanks for choosing eyecare location! Is there anything I can help you with?",Nothing as of now.,"Thanks, Have a great day!"
+"Hi, I'd like to schedule an appointment.","Sure, I can assist with that. Could you please provide your name, DOB, Phone number and Email and the reason for your visit?",It's Laura.,"Thank you, Laura. Can I have your full name (First Name and Last Name) and date of birth?","Uh, I think it's Laura... Can you check your records?","To ensure we have the correct information, I'll need your full name (First Name and Last Name) and date of birth. This helps us locate your records accurately.","Oh, right. It's Laura Adams. I was born on August 7th, 1992.",Thank you. Could you please provide a contact number and email?,"Um, it's... (555) 456... 7890? And I don't have an email address.","Thank you. Just to confirm, your contact number is (555) 456-7890, correct?","Yes, that's correct.","Thanks for the details, We have sent you the OTP on the registered Phone Number. Can you please enter the OTP?",4444,"Thanks for the validation, Please choose the appointment Reason from the following: <<show cards>>",Select one card.,Great. Do you have any preferred dates and times for your appointment?,Anytime next week is fine.,"Okay, let me check our availability for next week. Do you prefer mornings or afternoons?","Uh, mornings, I guess.","Please choose a provider from the list:
+● Dr. Sarah Lee
+● Dr. John Smith
+● Dr. Emma Brown",I'll choose Dr. Sarah Lee.,"I see the following open slots for next week: Monday, 9:00 AM; Wednesday, 9:30 AM; Friday, 10:00 AM.","Let's book the Monday, 9:00 AM appointment.","Alright! Can you please confirm the following details once:
+Patient Information:
+Name: Laura Adams
+Date of Birth: August 7, 1992
+Contact Number: (555) 456-7890
+Appointment Details:
+Date: Monday, next week (June 3, 2024)
+Time: 9:00 AM
+Provider: Dr. Sarah Lee
+Reason for Visit: Routine eye check-up","Yes, they are correct!","Your Appointment is scheduled, Thanks for choosing eyecare location! Is there anything I can help you with?",Nothing as of now.,"Thanks, Have a great day!"
+"Hello, I'd like to book an appointment.","Sure, I can help with that. Could you please provide your name, DOB, Phone number and Email and the reason for your visit?",It's Robert.,"Thank you, Robert. Can I have your full name (First Name and Last Name) and date of birth?","Uh, I think it's Robert... Can you look it up?","To ensure we have the correct information, I'll need your full name (First Name and Last Name) and date of birth. This helps us locate your records accurately.","Oh, right. It's Robert Clark. I was born on September 15th, 1988.",Thank you. Could you please provide a contact number and email?,"Um, it's... (555) 567... 8901? And I don't have an email address.","Thank you. Just to confirm, your contact number is (555) 567-8901, correct?","Yes, that's correct.","Thanks for the details, We have sent you the OTP on the registered Phone Number. Can you please enter the OTP?",5555,"Thanks for the validation, Please choose the appointment Reason from the following: <<show cards>>",Select one card.,Great. Do you have any preferred dates and times for your appointment?,Anytime next week works.,"Okay, let me check our availability for next week. Do you prefer mornings or afternoons?","Uh, afternoons, I guess.","Please choose a provider from the list:
+● Dr. David Johnson
+● Dr. Linda Brown
+● Dr. Chris Martin",I'll choose Dr. David Johnson.,"I see the following open slots for next week: Tuesday, 3:00 PM; Thursday, 3:20 PM; Friday, 3:40 PM.","Let's book the Tuesday, 3:00 PM appointment.","Alright! Can you please confirm the following details once:
+Patient Information:
+Name: Robert Clark
+Date of Birth: September 15, 1988
+Contact Number: (555) 567-8901
+Appointment Details:
+Date: Tuesday, next week (June 4, 2024)
+Time: 3:00 PM
+Provider: Dr. David Johnson
+Reason for Visit: Blurry vision","Yes, they are correct!","Your Appointment is scheduled, Thanks for choosing eyecare location! Is there anything I can help you with?",Nothing as of now.,"Thanks, Have a great day!"
+"Hello, this is Olivia Brown calling to book an eye examination appointment for my child at the eyecare hospital. My child has been experiencing some difficulty seeing the board at school. Here are the details:
+Parent's Name: Olivia Brown
+Child's Name: Lily Brown
+DOB: June 1, 2012
+Preferred Appointment Date: June 18, 2024
+Preferred Time: Afternoon, if possible
+Reason for Visit: Difficulty seeing the board at school
+Please call me back at your earliest convenience to confirm the appointment or suggest an alternative time if my preferred slot is not available. You can reach me at the contact number provided above. Thank you.
+Best regards,
+Olivia Brown
+(555) 789-0123","Ok, thank you for sharing the details. Can you please help provide an email address, We will validate it.",test@first-insight.com,"can you please confirm the following contact details
+Phone Number: (555) 789-0123
+Email: test@first-insight.com
+DOB: 12-05-2000",Yes it's correct,"Thanks for the details, We have sent you the OTP on the registered email and Phone Number, Can you please enter the OTP",1111,"Thanks for the validation, Please choose providers from the list:
+● Dr. Emily Thompson
+● Dr. Mark Davis
+● Dr. Susan Lee",I'll go with Dr. Emily Thompson.,"Provided appointment reason 'Difficulty seeing the board at school' is not matching, Can you please select from below list:
+● Distance Vision
+● Near Vision
+● Follow Up
+● Blurred vision",I'll go with Blurred vision,"Ok, thank you for sharing the details. Let me check the availability of the appointment. I see the following open slots on June 18, 2024: 2:00 PM, 2:20 PM, 3:00 PM.",Let's book the 2:00 PM appointment.,"Alright! Can you please confirm the following details once:
+Patient Information:
+Parent's Name: Olivia Brown
+Child's Name: Lily Brown
+Date of Birth: December 5, 2000
+Contact Number: (555) 789-0123
+Appointment Details:
+Date: June 18, 2024
+Time: 2:00 PM
+Provider: Dr. Emily Thompson
+Reason for Visit: Blurred vision","Yes, they are correct!","Your Appointment is scheduled, Thanks for choosing eyecare location! Is there anything I can help you with?",Nothing as of now.,"Thanks, Have a great day!",,,,,,,,,,
+"Hello, this is John Doe calling to book an eye examination appointment for my son at the eyecare hospital. My son has been struggling with blurry vision during classes. Here are the details:
+Parent's Name: John Doe
+Child's Name: Ethan Doe
+DOB: August 15, 2011
+Preferred Appointment Date: June 19, 2024
+Preferred Time: Morning, if possible
+Reason for Visit: Blurry vision during classes
+Please call me back at your earliest convenience to confirm the appointment or suggest an alternative time if my preferred slot is not available. You can reach me at the contact number provided above. Thank you.
+Best regards,
+John Doe
+(555) 123-4567","Ok, thank you for sharing the details. Can you please help provide an email address, We will validate it.",john.doe@example.com,"can you please confirm the following contact details
+Phone Number: (555) 123-4567
+Email: john.doe@example.com
+DOB: 08-15-2000",Yes it's correct,"Thanks for the details, We have sent you the OTP on the registered email and Phone Number, Can you please enter the OTP",2222,"Thanks for the validation, Please choose providers from the list:
+● Dr. Robert Wilson
+● Dr. Laura Bennett
+● Dr. John Smith",I'll go with Dr. Robert Wilson.,"Provided appointment reason 'Blurry vision during classes' is not matching, Can you please select from below list:
+● Distance Vision
+● Near Vision
+● Follow Up
+● Blurred vision",I'll go with Blurred vision,"Ok, thank you for sharing the details. Let me check the availability of the appointment. I see the following open slots on June 19, 2024: 9:00 AM, 9:30 AM, 10:00 AM.",Let's book the 9:00 AM appointment.,"Alright! Can you please confirm the following details once:
+Patient Information:
+Parent's Name: John Doe
+Child's Name: Ethan Doe
+Date of Birth: August 15, 2000
+Contact Number: (555) 123-4567
+Appointment Details:
+Date: June 19, 2024
+Time: 9:00 AM
+Provider: Dr. Robert Wilson
+Reason for Visit: Blurred vision","Yes, they are correct!","Your Appointment is scheduled, Thanks for choosing eyecare location! Is there anything I can help you with?",Nothing as of now.,"Thanks, Have a great day!",,,,,,,,,,
+"Hello, this is Emily Harris calling to book an eye examination appointment for my daughter at the eyecare hospital. My daughter has been complaining about headaches while reading. Here are the details:
+Parent's Name: Emily Harris
+Child's Name: Mia Harris
+DOB: March 3, 2013
+Preferred Appointment Date: June 20, 2024
+Preferred Time: Afternoon, if possible
+Reason for Visit: Headaches while reading
+Please call me back at your earliest convenience to confirm the appointment or suggest an alternative time if my preferred slot is not available. You can reach me at the contact number provided above. Thank you.
+Best regards,
+Emily Harris
+(555) 987-6543","Ok, thank you for sharing the details. Can you please help provide an email address, We will validate it.",emily.harris@testmail.com,"can you please confirm the following contact details
+Phone Number: (555) 987-6543
+Email: emily.harris@testmail.com
+DOB: 03-03-2000",Yes it's correct,"Thanks for the details, We have sent you the OTP on the registered email and Phone Number, Can you please enter the OTP",3333,"Thanks for the validation, Please choose providers from the list:
+● Dr. Sarah Lee
+● Dr. Mark White
+● Dr. Emily Brown",I'll go with Dr. Sarah Lee.,"Provided appointment reason 'Headaches while reading' is not matching, Can you please select from below list:
+● Distance Vision
+● Near Vision
+● Follow Up
+● Blurred vision",I'll go with Blurred vision,"Ok, thank you for sharing the details. Let me check the availability of the appointment. I see the following open slots on June 20, 2024: 2:00 PM, 2:30 PM, 3:00 PM.",Let's book the 2:00 PM appointment.,"Alright! Can you please confirm the following details once:
+Patient Information:
+Parent's Name: Emily Harris
+Child's Name: Mia Harris
+Date of Birth: March 3, 2000
+Contact Number: (555) 987-6543
+Appointment Details:
+Date: June 20, 2024
+Time: 2:00 PM
+Provider: Dr. Sarah Lee
+Reason for Visit: Blurred vision","Yes, they are correct!","Your Appointment is scheduled, Thanks for choosing eyecare location! Is there anything I can help you with?",Nothing as of now.,"Thanks, Have a great day!",,,,,,,,,,
+"Hello, this is Michael Brown calling to book an eye examination appointment for my child at the eyecare hospital. My child has been having trouble seeing objects at a distance. Here are the details:
+Parent's Name: Michael Brown
+Child's Name: Lily Brown
+DOB: September 25, 2012
+Preferred Appointment Date: June 21, 2024
+Preferred Time: Afternoon, if possible
+Reason for Visit: Trouble seeing objects at a distance
+Please call me back at your earliest convenience to confirm the appointment or suggest an alternative time if my preferred slot is not available. You can reach me at the contact number provided above. Thank you.
+Best regards,
+Michael Brown
+(555) 789-0123","Ok, thank you for sharing the details. Can you please help provide an email address, We will validate it.",michael.brown@example.com,"can you please confirm the following contact details
+Phone Number: (555) 789-0123
+Email: michael.brown@example.com
+DOB: 09-25-2000",Yes it's correct,"Thanks for the details, We have sent you the OTP on the registered email and Phone Number, Can you please enter the OTP",4444,"Thanks for the validation, Please choose providers from the list:
+● Dr. Michael Green
+● Dr. Sarah Johnson
+● Dr. David Thompson",I'll go with Dr. Michael Green.,"Provided appointment reason 'Trouble seeing objects at a distance' is not matching, Can you please select from below list:
+● Distance Vision
+● Near Vision
+● Follow Up
+● Blurred vision",I'll go with Blurred vision,"Ok, thank you for sharing the details. Let me check the availability of the appointment. I see the following open slots on June 21, 2024: 2:00 PM, 2:20 PM, 3:00 PM.",Let's book the 2:00 PM appointment.,"Alright! Can you please confirm the following details once:
+Patient Information:
+Parent's Name: Michael Brown
+Child's Name: Lily Brown
+Date of Birth: September 25, 2000
+Contact Number: (555) 789-0123
+Appointment Details:
+Date: June 21, 2024
+Time: 2:00 PM
+Provider: Dr. Michael Green
+Reason for Visit: Blurred vision","Yes, they are correct!","Your Appointment is scheduled, Thanks for choosing eyecare location! Is there anything I can help you with?",Nothing as of now.,"Thanks, Have a great day!",,,,,,,,,,
+"Hello, this is Sarah Johnson calling to book an eye examination appointment for my son at the eyecare hospital. My son has been struggling with vision issues at school. Here are the details:
+Parent's Name: Sarah Johnson
+Child's Name: Jack Johnson
+DOB: November 12, 2012
+Preferred Appointment Date: June 22, 2024
+Preferred Time: Afternoon, if possible
+Reason for Visit: Vision issues at school
+Please call me back at your earliest convenience to confirm the appointment or suggest an alternative time if my preferred slot is not available. You can reach me at the contact number provided above. Thank you.
+Best regards,
+Sarah Johnson
+(555) 246-8109","Ok, thank you for sharing the details. Can you please help provide an email address, We will validate it.",sarah.johnson@schoolmail.com,"can you please confirm the following contact details
+Phone Number: (555) 246-8109
+Email: sarah.johnson@schoolmail.com
+DOB: 11-12-2000",Yes it's correct,"Thanks for the details, We have sent you the OTP on the registered email and Phone Number, Can you please enter the OTP",5555,"Thanks for the validation, Please choose providers from the list:
+● Dr. Robert Anderson
+● Dr. Laura Wilson
+● Dr. Michael Clark",I'll go with Dr. Robert Anderson.,"Provided appointment reason 'Vision issues at school' is not matching, Can you please select from below list:
+● Distance Vision
+● Near Vision
+● Follow Up
+● Blurred vision",I'll go with Blurred vision,"Ok, thank you for sharing the details. Let me check the availability of the appointment. I see the following open slots on June 22, 2024: 2:00 PM, 2:20 PM, 3:00 PM.",Let's book the 2:00 PM appointment.,"Alright! Can you please confirm the following details once:
+Patient Information:
+Parent's Name: Sarah Johnson
+Child's Name: Jack Johnson
+Date of Birth: November 12, 2000
+Contact Number: (555) 246-8109
+Appointment Details:
+Date: June 22, 2024
+Time: 2:00 PM
+Provider: Dr. Robert Anderson
+Reason for Visit: Blurred vision","Yes, they are correct!","Your Appointment is scheduled, Thanks for choosing eyecare location! Is there anything I can help you with?",Nothing as of now.,"Thanks, Have a great day!",,,,,,,,,,
+"I have an appointment tomorrow with Dr Anderson, I am out of town so want to cancel the appointment.","Sure, Can you please let me know your Name, DOB and Phone Number or Email?","My name is Tim David, DOB: 4th Jan 1997, My mobile is 1111111111.","Thanks for the details, We have sent the OTP on your mobile number to verify your identity. Can you enter OTP?",1234,"Thanks for the details, Your appointment is scheduled tomorrow at 2 PM, Are you sure you want to cancel it? Or do you want to reschedule it?",Cancel it.,"Sure, your appointment is cancelled, Please visit our site again to book the appointment once you are available. Is there anything else I can help you with?",Not really.,"Thanks, Have a great day!",,,,,,,,,,,,,,,,,,
+"I have an appointment tomorrow with Dr Bennett, I have a conflict and need to cancel the appointment.","Sure, Can you please let me know your Name, DOB and Phone Number or Email?","My name is Sarah Lee, DOB: 12th Mar 1985, My phone number is 2222222222.","Thanks for the details, We have sent the OTP on your mobile number to verify your identity. Can you enter OTP?",5678,"Thanks for the details, Your appointment is scheduled tomorrow at 3 PM, Are you sure you want to cancel it? Or do you want to reschedule it?",Cancel it.,"Sure, your appointment is cancelled, Please visit our site again to book the appointment once you are available. Is there anything else I can help you with?","No, that's all.","Thanks, Have a great day!",,,,,,,,,,,,,,,,,,
+"I have an appointment tomorrow with Dr Clark, but something came up, and I need to cancel it.","Sure, Can you please let me know your Name, DOB and Phone Number or Email?","My name is John Doe, DOB: 10th Feb 1990, My mobile number is 3333333333.","Thanks for the details, We have sent the OTP on your mobile number to verify your identity. Can you enter OTP?",9101,"Thanks for the details, Your appointment is scheduled tomorrow at 4 PM, Are you sure you want to cancel it? Or do you want to reschedule it?",Cancel it.,"Sure, your appointment is cancelled, Please visit our site again to book the appointment once you are available. Is there anything else I can help you with?","No, I'm good.","Thanks, Have a great day!",,,,,,,,,,,,,,,,,,
+"I have an appointment tomorrow with Dr Johnson, but I'm unable to make it, so I want to cancel the appointment.","Sure, Can you please let me know your Name, DOB and Phone Number or Email?","My name is Alice Smith, DOB: 20th Apr 1987, My contact number is 4444444444.","Thanks for the details, We have sent the OTP on your mobile number to verify your identity. Can you enter OTP?",1122,"Thanks for the details, Your appointment is scheduled tomorrow at 10 AM, Are you sure you want to cancel it? Or do you want to reschedule it?",Cancel it.,"Sure, your appointment is cancelled, Please visit our site again to book the appointment once you are available. Is there anything else I can help you with?",Nothing else.,"Thanks, Have a great day!",,,,,,,,,,,,,,,,,,
+"I have an appointment tomorrow with Dr Brown, but I need to cancel the appointment due to unforeseen circumstances.","Sure, Can you please let me know your Name, DOB and Phone Number or Email?","My name is Robert Wilson, DOB: 5th May 1983, My mobile is 5555555555.","Thanks for the details, We have sent the OTP on your mobile number to verify your identity. Can you enter OTP?",3344,"Thanks for the details, Your appointment is scheduled tomorrow at 11 AM, Are you sure you want to cancel it? Or do you want to reschedule it?",Cancel it.,"Sure, your appointment is cancelled, Please visit our site again to book the appointment once you are available. Is there anything else I can help you with?","No, thank you.","Thanks, Have a great day!",,,,,,,,,,,,,,,,,,
+"I have an appointment on 7th Oct 2024 with Dr Anderson, I cannot make it as I am travelling, I want to reschedule to next Tuesday.","Sure, Can you please let me know your Name, DOB and Phone Number or Email?","My name is Tim David, DOB: 4th Jan 1997, My mobile is 1111111111","Thanks for the details, We have sent the OTP on your mobile number to verify your identity. Can you enter OTP?",1234,"Sure, Please select the time slot you want to reschedule your appointment.",Selects the time slot,"Your appointment is rescheduled on next Tuesday at 2 PM, Is there anything else I can help you with?",No,"Thanks, Have a great day!!",,,,,,,,,,,,,,,,,,
+"I have an appointment on 15th Oct 2024 with Dr Lee, I need to reschedule it to next Wednesday as I have a conflict.","Sure, Can you please provide your Name, DOB, and either Phone Number or Email?","My name is Sarah Johnson, DOB: 15th May 1985, My phone number is 2222222222","Thanks for the details, We have sent the OTP on your phone number to verify your identity. Please enter the OTP.",5678,"Great, Please select the time slot you'd like to reschedule your appointment.",Selects the time slot,"Your appointment is rescheduled on next Wednesday at 11 AM, Is there anything else I can assist you with?",No,"Thank you, Have a great day!!",,,,,,,,,,,,,,,,,,
+"I have an appointment on 20th Oct 2024 with Dr Smith, I want to reschedule to next Friday as I am out of town.","Sure, Could you please share your Name, DOB, and your Phone Number or Email?","My name is Mike Brown, DOB: 20th Aug 1990, My mobile number is 3333333333",Thank you for the information. An OTP has been sent to your mobile for verification. Please enter the OTP.,9101,"Thank you, Please choose the time slot you prefer for rescheduling your appointment.",Selects the time slot,"Your appointment is rescheduled on next Friday at 9 AM, Is there anything else you need?",No,"Thanks, Enjoy your day!!",,,,,,,,,,,,,,,,,,
+"I have an appointment on 10th Nov 2024 with Dr Brown, I can't make it and would like to reschedule it to the following Monday.","Sure, I can assist with that. Please provide your Name, DOB, and Phone Number or Email.","My name is Laura Wilson, DOB: 10th Feb 1982, My contact number is 4444444444",Thanks for the provided details. An OTP has been sent to your contact number for verification. Can you please enter the OTP?,1121,"Thank you, Please select a new time slot for your appointment.",Selects the time slot,"Your appointment is rescheduled on next Monday at 3 PM, Can I help you with anything else?",No,"Thank you, Have a wonderful day!!",,,,,,,,,,,,,,,,,,
+"I have an appointment on 1st Dec 2024 with Dr Green, I need to reschedule it to next Thursday due to a prior engagement.","Sure, I'll help with that. Please give me your Name, DOB, and either Phone Number or Email.","My name is David Green, DOB: 1st Mar 1978, My mobile is 5555555555","Thank you, we have sent an OTP to your phone number to verify your identity. Please enter the OTP.",3141,"Thanks, Please choose the time slot you'd like to reschedule your appointment to.",Selects the time slot,"Your appointment is rescheduled on next Thursday at 10 AM, Is there anything else I can do for you?",No,"Thanks, Have a fantastic day!!",,,,,,,,,,,,,,,,,,
+"Hello, this is Olivia Brown calling to book an eye examination appointment for my child at the eyecare hospital. My child has been experiencing some difficulty seeing the board at school. Here are the details:
+Child's Name: Lily Brown
+DOB: June 1, 2012
+Preferred Appointment Date: June 18, 2024
+Preferred Time: Afternoon, if possible
+Reason for Visit: Difficulty seeing the board at school
+Please call me back at your earliest convenience to confirm the appointment or suggest an alternative time if my preferred slot is not available. You can reach me at the contact number provided above. Thank you.
+Best regards,
+Olivia Brown
+(555) 789-0123","Ok, thank you for sharing the details. Can you please help provide an email address and Date Of Birth","DOB is December 5, 2000, I don't have the email","ok no problem, can you please confirm the following contact details
+Phone Number: (555) 789-0123
+DOB: 12-05-2000",Yes it's correct,"Thanks for the details, We have sent you the OTP on the registered Phone Number, Can you please enter the OTP",1111,"Thanks for the validation, Please choose providers from the list:
+● Dr. Emily Thompson
+● Dr. Mark Davis
+● Dr. Susan Lee",I'll go with Dr. Emily Thompson.,"Ok, thank you for sharing the details. Let me check the availability of the appointment.
+I see the following open slots on June 18, 2024: 2:00 PM, 2:20 PM, 3:00 PM.",Let's book the 2:00 PM appointment.,"Alright! Can you please confirm the following details once:
+Patient Information:
+Parent's Name: Olivia Brown
+Child's Name: Lily Brown
+Date of Birth: December 5, 2000
+Contact Number: (555) 789-0123
+Appointment Details:
+Date: June 18, 2024
+Time: 2:00 PM
+Provider: Dr. Emily Thompson
+Reason for Visit: Difficulty seeing the board at school","Yes, they are correct!","Your Appointment is scheduled, Thanks for choosing eyecare location! Can you please fill the intake and consent forms from below link before the appointment date at https://t.maximeyes.com/ajbask","ok sure, Will do it","Thanks, Is there anything else i can help you with?",all good for now,"Thanks, Have a great day!!",,,,,,,,,,
+"Hello, this is Sarah Johnson calling to book an eye examination appointment for my son at the eyecare hospital. My son has been complaining about headaches while reading. Here are the details:
+Child's Name: Ethan Johnson
+DOB: July 10, 2013
+Preferred Appointment Date: June 20, 2024
+Preferred Time: Morning, if possible
+Reason for Visit: Headaches while reading
+Please call me back at your earliest convenience to confirm the appointment or suggest an alternative time if my preferred slot is not available. You can reach me at the contact number provided above. Thank you.
+Best regards,
+Sarah Johnson
+(555) 987-6543","Ok, thank you for sharing the details. Can you please help provide an email address and Date Of Birth","DOB is January 20, 1980, I don't have the email","ok no problem, can you please confirm the following contact details
+Phone Number: (555) 987-6543
+DOB: 01-20-1980",Yes it's correct,"Thanks for the details, We have sent you the OTP on the registered Phone Number, Can you please enter the OTP",2222,"Thanks for the validation, Please choose providers from the list:
+● Dr. Emily Thompson
+● Dr. John Smith
+● Dr. Susan Lee",I'll go with Dr. Emily Thompson.,"Ok, thank you for sharing the details. Let me check the availability of the appointment.
+I see the following open slots on June 20, 2024: 9:00 AM, 9:20 AM, 10:00 AM.",Let's book the 9:00 AM appointment.,"Alright! Can you please confirm the following details once:
+Patient Information:
+Parent's Name: Sarah Johnson
+Child's Name: Ethan Johnson
+Date of Birth: January 20, 1980
+Contact Number: (555) 987-6543
+Appointment Details:
+Date: June 20, 2024
+Time: 9:00 AM
+Provider: Dr. Emily Thompson
+Reason for Visit: Headaches while reading","Yes, they are correct!","Your Appointment is scheduled, Thanks for choosing eyecare location! Can you please fill the intake and consent forms from below link before the appointment date at https://t.maximeyes.com/ajbask","ok sure, Will do it","Thanks, Is there anything else i can help you with?",all good for now,"Thanks, Have a great day!!",,,,,,,,,,
+"Hello, this is John Miller calling to book an eye examination appointment for my daughter at the eyecare hospital. My daughter has been struggling to see the whiteboard at school. Here are the details:
+Child's Name: Ava Miller
+DOB: March 15, 2014
+Preferred Appointment Date: June 22, 2024
+Preferred Time: Afternoon, if possible
+Reason for Visit: Struggling to see the whiteboard at school
+Please call me back at your earliest convenience to confirm the appointment or suggest an alternative time if my preferred slot is not available. You can reach me at the contact number provided above. Thank you.
+Best regards,
+John Miller
+(555) 234-5678","Ok, thank you for sharing the details. Can you please help provide an email address and Date Of Birth","DOB is March 3, 1985, I don't have the email","ok no problem, can you please confirm the following contact details
+Phone Number: (555) 234-5678
+DOB: 03-03-1985",Yes it's correct,"Thanks for the details, We have sent you the OTP on the registered Phone Number, Can you please enter the OTP",3333,"Thanks for the validation, Please choose providers from the list:
+● Dr. Emily Thompson
+● Dr. Michael Brown
+● Dr. Susan Lee",I'll go with Dr. Emily Thompson.,"Ok, thank you for sharing the details. Let me check the availability of the appointment.
+I see the following open slots on June 22, 2024: 2:00 PM, 2:20 PM, 3:00 PM.",Let's book the 2:00 PM appointment.,"Alright! Can you please confirm the following details once:
+Patient Information:
+Parent's Name: John Miller
+Child's Name: Ava Miller
+Date of Birth: March 3, 1985
+Contact Number: (555) 234-5678
+Appointment Details:
+Date: June 22, 2024
+Time: 2:00 PM
+Provider: Dr. Emily Thompson
+Reason for Visit: Struggling to see the whiteboard at school","Yes, they are correct!","Your Appointment is scheduled, Thanks for choosing eyecare location! Can you please fill the intake and consent forms from below link before the appointment date at https://t.maximeyes.com/ajbask","ok sure, Will do it","Thanks, Is there anything else i can help you with?",all good for now,"Thanks, Have a great day!!",,,,,,,,,,
+"Hello, this is Emily Davis calling to book an eye examination appointment for my child at the eyecare hospital. My child has been having trouble focusing on distant objects. Here are the details:
+Child's Name: Noah Davis
+DOB: May 22, 2015
+Preferred Appointment Date: June 25, 2024
+Preferred Time: Afternoon, if possible
+Reason for Visit: Trouble focusing on distant objects
+Please call me back at your earliest convenience to confirm the appointment or suggest an alternative time if my preferred slot is not available. You can reach me at the contact number provided above. Thank you.
+Best regards,
+Emily Davis
+(555) 345-6789","Ok, thank you for sharing the details. Can you please help provide an email address and Date Of Birth","DOB is June 10, 1983, I don't have the email","ok no problem, can you please confirm the following contact details
+Phone Number: (555) 345-6789
+DOB: 06-10-1983",Yes it's correct,"Thanks for the details, We have sent you the OTP on the registered Phone Number, Can you please enter the OTP",4444,"Thanks for the validation, Please choose providers from the list:
+● Dr. Emily Thompson
+● Dr. Mark Davis
+● Dr. John Smith",I'll go with Dr. Emily Thompson.,"Ok, thank you for sharing the details. Let me check the availability of the appointment.
+I see the following open slots on June 25, 2024: 2:00 PM, 2:20 PM, 3:00 PM.",Let's book the 2:00 PM appointment.,"Alright! Can you please confirm the following details once:
+Patient Information:
+Parent's Name: Emily Davis
+Child's Name: Noah Davis
+Date of Birth: June 10, 1983
+Contact Number: (555) 345-6789
+Appointment Details:
+Date: June 25, 2024
+Time: 2:00 PM
+Provider: Dr. Emily Thompson
+Reason for Visit: Trouble focusing on distant objects","Yes, they are correct!","Your Appointment is scheduled, Thanks for choosing eyecare location! Can you please fill the intake and consent forms from below link before the appointment date at https://t.maximeyes.com/ajbask","ok sure, Will do it","Thanks, Is there anything else i can help you with?",all good for now,"Thanks, Have a great day!!",,,,,,,,,,
+"Hello, this is Michael Brown calling to book an eye examination appointment for my son at the eyecare hospital. My son has been experiencing blurred vision. Here are the details:
+Child's Name: Lucas Brown
+DOB: August 30, 2016
+Preferred Appointment Date: June 26, 2024
+Preferred Time: Morning, if possible
+Reason for Visit: Blurred vision
+Please call me back at your earliest convenience to confirm the appointment or suggest an alternative time if my preferred slot is not available. You can reach me at the contact number provided above. Thank you.
+Best regards,
+Michael Brown
+(555) 456-7890","Ok, thank you for sharing the details. Can you please help provide an email address and Date Of Birth","DOB is October 12, 1978, I don't have the email","ok no problem, can you please confirm the following contact details
+Phone Number: (555) 456-7890
+DOB: 10-12-1978",Yes it's correct,"Thanks for the details, We have sent you the OTP on the registered Phone Number, Can you please enter the OTP",5555,"Thanks for the validation, Please choose providers from the list:
+● Dr. Emily Thompson
+● Dr. Laura Green
+● Dr. Susan Lee",I'll go with Dr. Emily Thompson.,"Ok, thank you for sharing the details. Let me check the availability of the appointment.
+I see the following open slots on June 26, 2024: 9:00 AM, 9:20 AM, 10:00 AM.",Let's book the 9:00 AM appointment.,"Alright! Can you please confirm the following details once:
+Patient Information:
+Parent's Name: Michael Brown
+Child's Name: Lucas Brown
+Date of Birth: October 12, 1978
+Contact Number: (555) 456-7890
+Appointment Details:
+Date: June 26, 2024
+Time: 9:00 AM
+Provider: Dr. Emily Thompson
+Reason for Visit: Blurred vision","Yes, they are correct!","Your Appointment is scheduled, Thanks for choosing eyecare location! Can you please fill the intake and consent forms from below link before the appointment date at https://t.maximeyes.com/ajbask","ok sure, Will do it","Thanks, Is there anything else i can help you with?",all good for now,"Thanks, Have a great day!!",,,,,,,,,,
+"Hello, this is John Doe calling to book an appointment at the eyecare location. I am experiencing some issues with my vision and would like to see a specialist as soon as possible. Here are my details:
+Name: John Doe
+Date of Birth: January 1, 1980
+Preferred Appointment Date: June 10, 2024
+Preferred Time: Morning, if possible
+Reason for Visit: Blurred vision and eye discomfort
+Please call me back at your earliest convenience to confirm the appointment or suggest an alternative time if my preferred slot is not available. You can reach me at the contact number provided above. Thank you.
+Best regards,
+John Doe","Ok, thank you for sharing the details. Can you please help provide a phone number and email address?",555123456 test@first-insight.com,"Can you please confirm the following details once:
+Phone Number: 555123456
+Email: test@first-insight.com","Yes, it's correct.","Thanks for the details, We have sent you the OTP on the registered email and Phone Number. Can you please enter the OTP?",1111,"Ok, thank you for validation. Let me check the availability of the appointment.
+<Validation of data>
+<Get List of Providers>
+Please choose a provider from the list:
+● Dr. Ales Bru
+● Dr. Juhn Smith
+● Dr. Adam Blake",I'll choose Dr. Ales Bru.,"I see the following open slots on June 10, 2024: 10:00 AM, 10:20 AM, 12:20 PM.",None of those times work for me. Do you have any other options?,"Let me check for more available slots. One moment, please.
+[After a brief pause]
+I found a few more slots: June 11, 2024, 9:00 AM; June 12, 2024, 11:00 AM; June 13, 2024, 8:30 AM. Do any of these work for you?",Let's go with June 11 at 9:00 AM.,"Alright! Can you please confirm the following details once:
+Patient Information:
+Name: John Doe
+Date of Birth: January 1, 1980
+Contact Number: 555123456
+Appointment Details:
+Date: June 11, 2024
+Time: 9:00 AM
+Provider: Dr. Ales Bru
+Reason for Visit: Blurred vision and eye discomfort","Yes, they are correct!","Your Appointment is scheduled, Thanks for choosing eyecare location! Can you please fill the intake and consent forms from below link before the appointment date at https://t.maximeyes.com/ajbask","Ok sure, Will do it","Thanks, Is there anything else I can help you with?",<No response for 5 mins>,Are you still there?,<No response for 5 mins>,"Looks like you are busy, it was nice talking to you today. Please give us a callback if anything required.",,,,,,
+"Hello, this is Jane Smith calling to book an appointment at the eyecare location. I am experiencing some discomfort in my left eye and would like to see a specialist soon. Here are my details:
+Name: Jane Smith
+Date of Birth: February 2, 1990
+Preferred Appointment Date: July 15, 2024
+Preferred Time: Afternoon, if possible
+Reason for Visit: Left eye discomfort and blurred vision
+Please call me back at your earliest convenience to confirm the appointment or suggest an alternative time if my preferred slot is not available. You can reach me at the contact number provided above. Thank you.
+Best regards,
+Jane Smith","Ok, thank you for sharing the details. Can you please help provide a phone number and email address?",555234567 jane@insight.com,"Can you please confirm the following details once:
+Phone Number: 555234567
+Email: jane@insight.com","Yes, it's correct.","Thanks for the details, We have sent you the OTP on the registered email and Phone Number. Can you please enter the OTP?",2222,"Ok, thank you for validation. Let me check the availability of the appointment.
+<Validation of data>
+<Get List of Providers>
+Please choose a provider from the list:
+● Dr. Ales Bru
+● Dr. Juhn Smith
+● Dr. Adam Blake",I'll choose Dr. Ales Bru.,"I see the following open slots on July 15, 2024: 2:00 PM, 2:20 PM, 3:20 PM.",None of those times work for me. Do you have any other options?,"Let me check for more available slots. One moment, please.
+[After a brief pause]
+I found a few more slots: July 16, 2024, 3:00 PM; July 17, 2024, 1:00 PM; July 18, 2024, 4:30 PM. Do any of these work for you?",Let's go with July 16 at 3:00 PM.,"Alright! Can you please confirm the following details once:
+Patient Information:
+Name: Jane Smith
+Date of Birth: February 2, 1990
+Contact Number: 555234567
+Appointment Details:
+Date: July 16, 2024
+Time: 3:00 PM
+Provider: Dr. Ales Bru
+Reason for Visit: Left eye discomfort and blurred vision","Yes, they are correct!","Your Appointment is scheduled, Thanks for choosing eyecare location! Can you please fill the intake and consent forms from below link before the appointment date at https://t.maximeyes.com/ajbask","Ok sure, Will do it","Thanks, Is there anything else I can help you with?",<No response for 5 mins>,Are you still there?,<No response for 5 mins>,"Looks like you are busy, it was nice talking to you today. Please give us a callback if anything required.",,,,,,
+"Hello, this is Michael Johnson calling to book an appointment at the eyecare location. I have been seeing floaters and would like to have it checked as soon as possible. Here are my details:
+Name: Michael Johnson
+Date of Birth: March 3, 1985
+Preferred Appointment Date: August 20, 2024
+Preferred Time: Morning, if possible
+Reason for Visit: Seeing floaters in my vision
+Please call me back at your earliest convenience to confirm the appointment or suggest an alternative time if my preferred slot is not available. You can reach me at the contact number provided above. Thank you.
+Best regards,
+Michael Johnson","Ok, thank you for sharing the details. Can you please help provide a phone number and email address?",555345678 michael@vision.com,"Can you please confirm the following details once:
+Phone Number: 555345678
+Email: michael@vision.com","Yes, it's correct.","Thanks for the details, We have sent you the OTP on the registered email and Phone Number. Can you please enter the OTP?",3333,"Ok, thank you for validation. Let me check the availability of the appointment.
+<Validation of data>
+<Get List of Providers>
+Please choose a provider from the list:
+● Dr. Ales Bru
+● Dr. Juhn Smith
+● Dr. Adam Blake",I'll choose Dr. Ales Bru.,"I see the following open slots on August 20, 2024: 8:00 AM, 9:00 AM, 11:00 AM.",None of those times work for me. Do you have any other options?,"Let me check for more available slots. One moment, please.
+[After a brief pause]
+I found a few more slots: August 21, 2024, 9:30 AM; August 22, 2024, 10:30 AM; August 23, 2024, 1:30 PM. Do any of these work for you?",Let's go with August 21 at 9:30 AM.,"Alright! Can you please confirm the following details once:
+Patient Information:
+Name: Michael Johnson
+Date of Birth: March 3, 1985
+Contact Number: 555345678
+Appointment Details:
+Date: August 21, 2024
+Time: 9:30 AM
+Provider: Dr. Ales Bru
+Reason for Visit: Seeing floaters in my vision","Yes, they are correct!","Your Appointment is scheduled, Thanks for choosing eyecare location! Can you please fill the intake and consent forms from below link before the appointment date at https://t.maximeyes.com/ajbask","Ok sure, Will do it","Thanks, Is there anything else I can help you with?",<No response for 5 mins>,Are you still there?,<No response for 5 mins>,"Looks like you are busy, it was nice talking to you today. Please give us a callback if anything required.",,,,,,
+"Hello, this is Emily Brown calling to book an appointment at the eyecare location. I am experiencing double vision and need to see a specialist soon. Here are my details:
+Name: Emily Brown
+Date of Birth: April 4, 1995
+Preferred Appointment Date: September 10, 2024
+Preferred Time: Morning, if possible
+Reason for Visit: Double vision
+Please call me back at your earliest convenience to confirm the appointment or suggest an alternative time if my preferred slot is not available. You can reach me at the contact number provided above. Thank you.
+Best regards,
+Emily Brown","Ok, thank you for sharing the details. Can you please help provide a phone number and email address?",555456789 emily@eyecare.com,"Can you please confirm the following details once:
+Phone Number: 555456789
+Email: emily@eyecare.com","Yes, it's correct.","Thanks for the details, We have sent you the OTP on the registered email and Phone Number. Can you please enter the OTP?",4444,"Ok, thank you for validation. Let me check the availability of the appointment.
+<Validation of data>
+<Get List of Providers>
+Please choose a provider from the list:
+● Dr. Ales Bru
+● Dr. Juhn Smith
+● Dr. Adam Blake",I'll choose Dr. Ales Bru.,"I see the following open slots on September 10, 2024: 9:00 AM, 10:00 AM, 11:30 AM.",None of those times work for me. Do you have any other options?,"Let me check for more available slots. One moment, please.
+[After a brief pause]
+I found a few more slots: September 11, 2024, 8:30 AM; September 12, 2024, 9:00 AM; September 13, 2024, 10:00 AM. Do any of these work for you?",Let's go with September 11 at 8:30 AM.,"Alright! Can you please confirm the following details once:
+Patient Information:
+Name: Emily Brown
+Date of Birth: April 4, 1995
+Contact Number: 555456789
+Appointment Details:
+Date: September 11, 2024
+Time: 8:30 AM
+Provider: Dr. Ales Bru
+Reason for Visit: Double vision","Yes, they are correct!","Your Appointment is scheduled, Thanks for choosing eyecare location! Can you please fill the intake and consent forms from below link before the appointment date at https://t.maximeyes.com/ajbask","Ok sure, Will do it","Thanks, Is there anything else I can help you with?",<No response for 5 mins>,Are you still there?,<No response for 5 mins>,"Looks like you are busy, it was nice talking to you today. Please give us a callback if anything required.",,,,,,
+"Hello, this is David Wilson calling to book an appointment at the eyecare location. My vision has been getting blurry, and I'd like to see a specialist soon. Here are my details:
+Name: David Wilson
+Date of Birth: May 5, 1975
+Preferred Appointment Date: October 5, 2024
+Preferred Time: Morning, if possible
+Reason for Visit: Blurry vision
+Please call me back at your earliest convenience to confirm the appointment or suggest an alternative time if my preferred slot is not available. You can reach me at the contact number provided above. Thank you.
+Best regards,
+David Wilson","Ok, thank you for sharing the details. Can you please help provide a phone number and email address?",555567890 david@checkup.com,"Can you please confirm the following details once:
+Phone Number: 555567890
+Email: david@checkup.com","Yes, it's correct.","Thanks for the details, We have sent you the OTP on the registered email and Phone Number. Can you please enter the OTP?",5555,"Ok, thank you for validation. Let me check the availability of the appointment.
+<Validation of data>
+<Get List of Providers>
+Please choose a provider from the list:
+● Dr. Ales Bru
+● Dr. Juhn Smith
+● Dr. Adam Blake",I'll choose Dr. Ales Bru.,"I see the following open slots on October 5, 2024: 7:00 AM, 8:00 AM, 9:00 AM.",None of those times work for me. Do you have any other options?,"Let me check for more available slots. One moment, please.
+[After a brief pause]
+I found a few more slots: October 6, 2024, 7:30 AM; October 7, 2024, 8:30 AM; October 8, 2024, 9:30 AM. Do any of these work for you?",Let's go with October 6 at 7:30 AM.,"Alright! Can you please confirm the following details once:
+Patient Information:
+Name: David Wilson
+Date of Birth: May 5, 1975
+Contact Number: 555567890
+Appointment Details:
+Date: October 6, 2024
+Time: 7:30 AM
+Provider: Dr. Ales Bru
+Reason for Visit: Blurry vision","Yes, they are correct!","Your Appointment is scheduled, Thanks for choosing eyecare location! Can you please fill the intake and consent forms from below link before the appointment date at https://t.maximeyes.com/ajbask","Ok sure, Will do it","Thanks, Is there anything else I can help you with?",<No response for 5 mins>,Are you still there?,<No response for 5 mins>,"Looks like you are busy, it was nice talking to you today. Please give us a callback if anything required.",,,,,,
+"Hello, this is John Doe calling to book an appointment at the eyecare location. But I want to know if my insurance covers regular exam check or not.","Ok, thank you for sharing the details. Can you please help me with your DOB, email, and phone number?","555123456 test@first-insight.com, DOB is 3rd Aug 1997","Can you please confirm the following details once:
+Phone Number: 555123456
+Email: test@first-insight.com
+DOB: 03/08/1997","Yes, it's correct.","Thanks for the details, We have sent you the OTP on the registered email and Phone Number. Can you please enter the OTP?",1111,Thanks for the validation. Can you please let me know which insurance you have and what is the policy number?,I have Eyemed insurance and policy number is: xxxxxxx,"I am not able to answer this, I will redirect you to the practice person.","Ok, great thanks. Then I want to book an appointment next Tuesday for the regular exam.","Please choose a provider from the list:
+Dr. Ales Bru
+Dr. John Smith
+Dr. Adam Blake",I'll choose Dr. Ales Bru.,"Thanks, I see the following open slots on Jun 10, 2024, 10:00 AM - 10:20 AM, 10:20 AM - 10:40 AM, 12:20 PM - 12:40 PM",Selects card of 10:00 AM appointment,"Alright! Can you please confirm the following details once:
+Patient Information:
+● First and Last Name - John Doe
+● Date of Birth - January 1, 1980
+● Contact Number - (555) 123-456
+● Email: test@first-insight.com
+Appointment details:
+● Date - Jun 10, 2024
+● Time - 10:00 AM
+● Provider - Ales Bru
+● Reason for visit - Blurred vision and eye discomfort",Looks good.,Your Appointment is scheduled. Thanks for choosing eyecare location! Is there anything I can help you with?,Nothing as of now.,"Thanks, Have a great day!",,,,,,,,
+"Hi, this is Jane Smith. I need to book an appointment, but can you tell me if my insurance covers the eye examination?","Sure, I can help with that. Could you please provide your DOB, email, and phone number so I can check?","555987654 janesmith@example.com, DOB is 15th May 1990","Can you please confirm the following details once:
+Phone Number: 555987654
+Email: janesmith@example.com
+DOB: 15/05/1990","Yes, that's right.",Thank you for confirming. We've sent you an OTP to your registered email and phone number. Please enter it here.,2222,Thank you for the OTP. Could you please provide the name of your insurance and the policy number?,"My insurance is VSP, and the policy number is: yyyyyyy","I'm unable to verify this information, so I'll redirect you to a practice person for assistance.","Alright, thanks! I'd like to schedule an appointment for next Tuesday.","Please select a provider from the list:
+Dr. Ales Bru
+Dr. John Smith
+Dr. Adam Blake",I'll go with Dr. John Smith.,"Thank you. The available slots on Jun 10, 2024, are 10:00 AM - 10:20 AM, 10:20 AM - 10:40 AM, and 12:20 PM - 12:40 PM.",I'll take the 10:00 AM slot.,"Alright! Please confirm the details:
+Patient Information:
+● First and Last Name - Jane Smith
+● Date of Birth - May 15, 1990
+● Contact Number - (555) 987-654
+● Email: janesmith@example.com
+Appointment details:
+● Date - Jun 10, 2024
+● Time - 10:00 AM
+● Provider - John Smith
+● Reason for visit - Blurred vision and eye discomfort","Yes, everything looks fine.",Your Appointment is scheduled. Thanks for choosing eyecare location! Is there anything else I can assist you with?,"No, that's all for now.","Thanks, have a great day!",,,,,,,,
+"Hello, I'm Michael Johnson. I want to schedule an appointment, but I need to know if my insurance will cover the check-up.","Alright, I can assist you. Can you please provide your date of birth, email, and phone number?","555654321 michaelj@example.com, DOB is 22nd Dec 1985","Can you please confirm the following details once:
+Phone Number: 555654321
+Email: michaelj@example.com
+DOB: 22/12/1985","Yes, those are correct.","Great, thanks! An OTP has been sent to your registered email and phone number. Please enter it to proceed.",3333,OTP verified successfully. Please provide your insurance provider's name and the policy number.,"It's BlueCross insurance, and the policy number is: zzzzzzz",I can't confirm the insurance details. Let me connect you with a practice person.,"Okay, I'd like to book an appointment for the regular exam next Tuesday.","Please choose from the following providers:
+Dr. Ales Bru
+Dr. John Smith
+Dr. Adam Blake","Dr. Adam Blake, please.","Great, the following slots are available on Jun 10, 2024: 10:00 AM - 10:20 AM, 10:20 AM - 10:40 AM, 12:20 PM - 12:40 PM.",Booking the 10:00 AM slot.,"Alright! Please confirm the details:
+Patient Information:
+● First and Last Name - Michael Johnson
+● Date of Birth - December 22, 1985
+● Contact Number - (555) 654-321
+● Email: michaelj@example.com
+Appointment details:
+● Date - Jun 10, 2024
+● Time - 10:00 AM
+● Provider - Adam Blake
+● Reason for visit - Blurred vision and eye discomfort",All the details are correct.,Your Appointment is scheduled. Thank you for choosing eyecare location! Do you need help with anything else?,"No, I'm all set. Thanks!",Thank you! Have a great day!,,,,,,,,
+"Hi, I'm Emily Davis. Before I book an appointment, I want to check if my insurance covers the eye exam.","Thank you for reaching out. Please provide your date of birth, email, and phone number.","555123789 emilyd@example.com, DOB is 10th Jan 1992","Can you please confirm the following details once:
+Phone Number: 555123789
+Email: emilyd@example.com
+DOB: 10/01/1992","Yes, that's accurate.",Thank you! We've sent an OTP to your registered email and phone number. Can you please enter it?,4444,Thanks for entering the OTP. Could you share the insurance provider and policy number?,"I have UnitedHealthcare, and the policy number is: aaaaaaa",I'm not able to provide this information. I'll transfer you to a practice person now.,"Great, thanks! Please book an appointment for next Tuesday.","Select a provider from the list below:
+Dr. Ales Bru
+Dr. John Smith
+Dr. Adam Blake",I'll take Dr. Ales Bru.,"I've found the following available slots on Jun 10, 2024: 10:00 AM - 10:20 AM, 10:20 AM - 10:40 AM, 12:20 PM - 12:40 PM.",I'll go with the 10:00 AM slot.,"Alright! Please confirm the details:
+Patient Information:
+● First and Last Name - Emily Davis
+● Date of Birth - January 10, 1992
+● Contact Number - (555) 123-789
+● Email: emilyd@example.com
+Appointment details:
+● Date - Jun 10, 2024
+● Time - 10:00 AM
+● Provider - Ales Bru
+● Reason for visit - Blurred vision and eye discomfort","Yes, that's correct.",Your Appointment is scheduled. Thank you for choosing eyecare location! Can I assist you with anything else?,"Nothing else, thank you.",Thanks! Have a wonderful day!,,,,,,,,
+"Hello, this is Robert Brown. I'd like to book an appointment, but can you confirm if my insurance covers a regular exam?","Sure, I can check that for you. Could you provide your date of birth, email, and phone number?","555456123 robertb@example.com, DOB is 5th Sep 1988","Can you please confirm the following details once:
+Phone Number: 555456123
+Email: robertb@example.com
+DOB: 05/09/1988","Yes, everything is correct.",Thanks for confirming. Please enter the OTP sent to your registered email and phone number.,5555,"Great, thanks! Could you now provide the insurance provider and policy number?","It's Cigna insurance, and the policy number is: bbbbbbb","I can't help with this directly, so I'll redirect you to a practice person.","Okay, I want to book an appointment next Tuesday for a regular check-up.","Pick a provider from the list:
+Dr. Ales Bru
+Dr. John Smith
+Dr. Adam Blake",Dr. John Smith sounds good.,"These slots are available on Jun 10, 2024: 10:00 AM - 10:20 AM, 10:20 AM - 10:40 AM, 12:20 PM - 12:40 PM.",The 10:00 AM slot works for me.,"Alright! Please confirm the details:
+Patient Information:
+● First and Last Name - Robert Brown
+● Date of Birth - September 5, 1988
+● Contact Number - (555) 456-123
+● Email: robertb@example.com
+Appointment details:
+● Date - Jun 10, 2024
+● Time - 10:00 AM
+● Provider - John Smith
+● Reason for visit - Blurred vision and eye discomfort",Everything is correct.,Your Appointment is scheduled. Thank you for choosing eyecare location! Is there anything else you need?,"Nope, that's all. Thanks!",Thank you! Have a good day!,,,,,,,,
+"I want to know my appointment time for today, seems I might not be able to make it","Sure, Can you please let me know your Name, DOB and Phone Number or Email?","My name is Tim David, DOB: 4th Jan 1997, My mobile is 1111111111","Thanks for the details, We have sent the OTP on your mobile number to verify your identity. Can you enter OTP?",1234,Thank you for the verification. Let me check your appointment time. You have an appointment tomorrow 12 June at 11 AM.,"Ok, I will not be able to make it.",Do you want to Reschedule?,"Yes, Can you reschedule the appointment for tomorrow?","Sure, let me check the availability. Below are the available slots tomorrow. Please select which you want to book.","Seems none of these work, Is there any more slots?",Chatbot provides some more open slots for tomorrow.,"Seems these still don't work, Is there any more slots?",No more slots for tomorrow. Do you want any other date (Provide option to select date range or also user should be able to type)?,Then do next Monday.,"Okay, here are the available slots for next Monday.",Selects the time slot.,"Your appointment is rescheduled for next Monday, 13 June 2024 at 2 PM. Is there anything else I can help you with?",No,"Thanks, Have a great day!",,,,,,,,
+"I need to check the time of my appointment today, I might have to reschedule.","Sure, Can you provide your Name, Date of Birth, and either Phone Number or Email?","I'm Tim David, my DOB is 4th Jan 1997, and my phone number is 1111111111",Thanks for providing the details. We have sent an OTP to your mobile number for verification. Please enter the OTP.,2343,"Thanks for verifying. Let me check your appointment time. You have an appointment tomorrow, 12 June at 11 AM.",I won't be able to make it.,Would you like to reschedule?,"Yes, please reschedule for tomorrow.","Sure, I'll check the availability. Here are the available slots for tomorrow. Please choose one.",None of these times work for me. Are there any other options?,Here are some additional slots available for tomorrow.,These still don't work for me. Are there any other slots?,"Unfortunately, no more slots for tomorrow. Would you like to pick another date (You can select a date range or type in a date)?",Let's go with next Monday.,"Alright, these are the available slots for next Monday.",I'll take this slot.,"Your appointment has been rescheduled to next Monday, 13 June 2024 at 2 PM. Can I assist you with anything else?",No,"Thanks, Have a great day!",,,,,,,,
+Can you tell me my appointment time for today? I think I might not make it.,"Sure, could you please give me your Name, DOB, and either your Phone Number or Email?","Tim David here, DOB is 4th Jan 1997, and my mobile number is 1111111111",Thank you for the information. An OTP has been sent to your mobile number for verification. Please provide the OTP.,2342,"Thanks for the verification. I see that your appointment is scheduled for tomorrow, 12 June at 11 AM.",I can't make it.,Shall we reschedule your appointment?,"Yes, reschedule it for tomorrow.","Certainly, I'll check what's available. These are the available slots for tomorrow. Please select one.",These times don't work. Are there more slots?,I've found some more slots for tomorrow.,These options don't fit either. Are there more?,There are no more slots for tomorrow. Do you want to choose another date (You can select a date range or type it in)?,Book it for next Monday.,"Sure, here are the slots available for next Monday.",I'll go with this time.,"Your appointment is now rescheduled for next Monday, 13 June 2024 at 2 PM. Do you need help with anything else?",No,"Thanks, Have a great day!",,,,,,,,
+"I want to check my appointment time for today, I might need to reschedule.","Of course, I can help. Could you please provide your Name, DOB, and either your Phone Number or Email?","It's Tim David, I was born on 4th Jan 1997, and my phone number is 1111111111","Thanks, I've sent an OTP to your mobile number to verify your identity. Please enter the OTP.",1232,"Verification successful. Your appointment is tomorrow, 12 June at 11 AM.",I won't be able to attend.,Do you want to reschedule your appointment?,"Yes, please reschedule it for tomorrow.","Sure, I'll look up the available slots. Here's what's open tomorrow. Please pick a slot.",I can't make any of these. Are there any other slots?,Here are more available slots for tomorrow.,These don't work either. Do you have any other slots?,No more slots available for tomorrow. Would you like to choose another date (You can select a date range or type one in)?,Next Monday will work.,"Okay, here's what's available for next Monday.",I'll book this slot.,"Your appointment has been successfully rescheduled for next Monday, 13 June 2024 at 2 PM. Is there anything else you need?",No,"Thanks, Have a great day!",,,,,,,,
+Could you please let me know my appointment time for today? I may not be able to make it.,"Certainly, I can check that for you. Could you please provide your Name, Date of Birth, and your Phone Number or Email?","Name: Tim David, DOB: 4th Jan 1997, Phone: 1111111111",Thank you. We have sent an OTP to your phone number for verification. Can you please enter it?,4567,"Thank you for verifying. Your appointment is scheduled for tomorrow, 12 June at 11 AM.",I can't make it tomorrow.,Would you like to reschedule the appointment?,"Yes, could you reschedule it for tomorrow?","Certainly, I'll find out what's available. Here are the available slots for tomorrow. Please choose.",None of these fit my schedule. Are there more options?,Here are some other options for tomorrow.,These still don't work. Are there any more options?,There are no additional slots for tomorrow. Do you want to pick another date (You can select a date range or type in a specific date)?,Schedule it for next Monday.,"Alright, here are the options for next Monday.",Let's book this time.,"Your appointment is set for next Monday, 13 June 2024 at 2 PM. Is there anything else I can help with?",No,"Thanks, Have a great day!",,,,,,,,
+Hello This is John Doe. I am experiencing some issues with my vision and would like to see a specialist as soon as possible. I got up this morning and my vision is super blurry and I'm not able to see well. My mobile phone number is 555-252-4354 or I can be reached at my work phone number 234-654-6543 extension 77.,"Hello John, I'm the virtual assistant for <insert practice name>. It's important you seek immediate medical attention based on the symptoms you mentioned. If your vision issues have become worse please visit an immediate care or emergency room. I've alerted the staff to contact you ASAP.",,Handoff to staff as medical issue alert which needs to show on the Patient Messenger as a High Priority message that needs immediate response. We should also toast all users about Voice Message left for an urgent medical condition.,,,,,,,,,,,,,,,,,,,,,,,,
+"Hi, this is Sarah Brown. I woke up with extremely blurry vision and I'm having a hard time seeing. I need to see a doctor immediately. You can reach me on my mobile at 555-876-5432 or at work at 234-765-4321 extension 22.","Hello Sarah, I'm the virtual assistant for <insert practice name>. It's important you seek immediate medical attention based on the symptoms you mentioned. If your vision issues have become worse please visit an immediate care or emergency room. I've alerted the staff to contact you ASAP.",,Handoff to staff as medical issue alert which needs to show on the Patient Messenger as a High Priority message that needs immediate response. We should also toast all users about Voice Message left for an urgent medical condition.,,,,,,,,,,,,,,,,,,,,,,,,
+"Good morning, this is Michael Johnson. I'm experiencing sudden blurred vision and would like to consult with a specialist right away. My mobile number is 555-321-6547, and you can also reach me at my office at 234-987-6543 extension 33.","Hello Michael, I'm the virtual assistant for <insert practice name>. It's important you seek immediate medical attention based on the symptoms you mentioned. If your vision issues have become worse please visit an immediate care or emergency room. I've alerted the staff to contact you ASAP.",,Handoff to staff as medical issue alert which needs to show on the Patient Messenger as a High Priority message that needs immediate response. We should also toast all users about Voice Message left for an urgent medical condition.,,,,,,,,,,,,,,,,,,,,,,,,
+"Hello, this is Emily Davis. I've been having issues with my vision since this morning, and it's getting worse. My vision is blurry, and I need to see a doctor as soon as possible. My contact number is 555-654-9870, and my work number is 234-123-4567 extension 44.","Hello Emily, I'm the virtual assistant for <insert practice name>. It's important you seek immediate medical attention based on the symptoms you mentioned. If your vision issues have become worse please visit an immediate care or emergency room. I've alerted the staff to contact you ASAP.",,Handoff to staff as medical issue alert which needs to show on the Patient Messenger as a High Priority message that needs immediate response. We should also toast all users about Voice Message left for an urgent medical condition.,,,,,,,,,,,,,,,,,,,,,,,,
+"Hi, this is Robert Smith. I woke up with severely blurred vision, and I'm concerned. I need to see an eye doctor immediately. You can reach me on my mobile at 555-789-0123 or at work at 234-456-7890 extension 55.","Hello Robert, I'm the virtual assistant for <insert practice name>. It's important you seek immediate medical attention based on the symptoms you mentioned. If your vision issues have become worse please visit an immediate care or emergency room. I've alerted the staff to contact you ASAP.",,Handoff to staff as medical issue alert which needs to show on the Patient Messenger as a High Priority message that needs immediate response. We should also toast all users about Voice Message left for an urgent medical condition.,,,,,,,,,,,,,,,,,,,,,,,,
+"Hello This is John Doe, I ordered glasses on my last Visit and want to check if My glasses have arrived or not, So I can come for pickup","Ok sure, Can you please help provide Date of Birth, phone number or email address",555123456 test@first-insight.com 3rd Aug,"Thanks for the details, Can you provide your birth Year <<as in last response patient did not provide birth year>>",2002,"Thanks, can you please confirm the following details once
+Phone Number: 555123456
+Email: test@first-insight.com
+DOB: 08/03/2002",Yes it's correct,"Thanks for the details, We have sent you the OTP on the registered email and Phone Number, Can you please enter the OTP","Did not receive OTP, Can you let me know what email you have sent it","I have sent it on below number
+Phone Number: 555123456
+Email: test@first-insight.com","ok, Can you please just send OTP on my mobile 555123456 as i don't have access to email","Sure, OTP sent on 555123456 , Please enter OTP",1111,"Thanks for the validation, Your Order No. 111 Is ready for Pickup <<response will come from API, If there are multiple orders then cards will be displayed>>","ok Great, Thanks, is clinic open tomorrow?","Yes, Below are working hrs, Monday to Friday, 9 to 5 PM, <<this data should come from custom data>> Is there anything I can help you with?",Nothing as of now,"Thanks, Have a great day! How was your experience, please rate me here https://ratings.maximeyes.com/th6r",,,,,,,,,,
+"Hello, this is Jane Smith. I ordered glasses a couple of weeks ago and would like to know if they have arrived for pickup.","Sure, I can help with that. Could you please provide your Date of Birth, phone number, or email address?",555234567 jane.smith@example.com July 15,Thank you for the information. Can you please provide your birth year?,1985,"Thank you! Could you please confirm the following details:
+Phone Number: 555234567
+Email: jane.smith@example.com
+DOB: 07/15/1985","Yes, they are correct.",Thank you for confirming. We've sent an OTP to your registered email and phone number. Could you please enter the OTP?,I didn't receive the OTP. Could you tell me which email you sent it to?,"We've sent it to the following:
+Phone Number: 555234567
+Email: jane.smith@example.com",Can you resend the OTP to my mobile number 555234567? I don't have access to my email right now.,"Sure, the OTP has been sent to 555234567. Please enter the OTP.",2222,"Thank you for the validation. Your Order No. 112 is ready for pickup <<response from API, multiple orders will show as cards>>","Great, thanks! Is the clinic open tomorrow?","Yes, we're open Monday to Friday, 9 AM to 5 PM. <<this data is from custom data>> Is there anything else I can assist you with?","No, that's all for now.","Thanks, have a great day! Please rate your experience here: https://ratings.maximeyes.com/th6r",,,,,,,,,,
+"Hi, I'm Michael Brown. I ordered a pair of glasses during my last visit and wanted to check if they are ready for pickup.","Of course, can you provide your Date of Birth, phone number, or email address so I can check for you?",555345678 michael.brown@example.com 5th September,Thanks! Could you also provide your birth year?,1990,"Great! Please confirm the following details:
+Phone Number: 555345678
+Email: michael.brown@example.com
+DOB: 09/05/1990","Yes, that's right.",Thanks! We've sent an OTP to your registered email and phone number. Please enter the OTP.,I haven't received the OTP. Can you confirm where it was sent?,"The OTP was sent to:
+Phone Number: 555345678
+Email: michael.brown@example.com",Can you send the OTP to my mobile 555345678? I can't access my email.,OTP sent to 555345678. Please enter the OTP.,3333,"Thanks! Your Order No. 113 is ready for pickup <<response from API, cards shown if multiple orders>>","Awesome, thank you! Is the clinic open tomorrow?","Yes, our working hours are Monday to Friday, 9 AM to 5 PM. <<this info comes from custom data>> Anything else I can help with?","No, nothing else.",Thank you! Have a great day! Please rate your experience at https://ratings.maximeyes.com/th6r,,,,,,,,,,
+"Hello, this is Emily Davis. I ordered glasses last month, and I'm checking to see if they have arrived for pickup.","Sure thing! Could you provide your Date of Birth, phone number, or email address to help me locate your order?",555456789 emily.davis@example.com October 12,Appreciate the details. Could you give me your birth year as well?,1978,"Thanks! Can you confirm these details for me:
+Phone Number: 555456789
+Email: emily.davis@example.com
+DOB: 10/12/1978","Yes, all correct.",Thank you! An OTP has been sent to your registered email and phone number. Please enter the OTP.,I didn't get the OTP. Can you let me know which email it was sent to?,"The OTP was sent to:
+Phone Number: 555456789
+Email: emily.davis@example.com",Please resend the OTP to my mobile 555456789 as I'm not able to check my email.,"Certainly, the OTP has been sent to 555456789. Please enter it.",4444,"Validation successful. Your Order No. 114 is ready for pickup <<API response, multiple orders will display as cards>>","Perfect, thanks! Is the clinic open tomorrow?","Yes, we're open from Monday to Friday, 9 AM to 5 PM. <<custom data provides this info>> Can I assist with anything else?","Nope, that's it.",Thanks! Have a great day! Please take a moment to rate your experience: https://ratings.maximeyes.com/th6r,,,,,,,,,,
+"Hi, this is Robert Johnson. I ordered some glasses recently and wanted to confirm if they have arrived so I can pick them up.","Certainly! Can you please provide your Date of Birth, phone number, or email address?",555567890 robert.johnson@example.com 22nd November,"Got it, thanks! Could you also tell me your birth year?",1992,"Just to confirm, are these details correct?
+Phone Number: 555567890
+Email: robert.johnson@example.com
+DOB: 11/22/1992","Yes, that's correct.",Thanks! We've sent an OTP to your email and phone number. Could you enter the OTP for verification?,The OTP didn't come through. Could you tell me which email you sent it to?,"We sent the OTP to:
+Phone Number: 555567890
+Email: robert.johnson@example.com",Can you just send the OTP to my mobile 555567890? I'm unable to access my email.,"Sure, the OTP has been sent to 555567890. Please enter it.",5555,"Thanks for verifying. Your Order No. 115 is ready for pickup <<API response, cards will display for multiple orders>>",Thank you! Is the clinic open tomorrow?,"Yes, the clinic is open Monday to Friday, 9 AM to 5 PM. <<data from custom info>> Anything else I can help with?","No, that's all.",Thank you! Have a wonderful day! Please rate your experience here: https://ratings.maximeyes.com/th6r,,,,,,,,,,
+"Hello This is John Doe, I ordered glasses on my last Visit, Can I pick up the glasses and contacts on Thursday around 8 am?","Ok sure, Can you please help provide Date of birth, phone number or email address",555123456 test@first-insight.com 3rd Aug,"Thanks for the details, Can you provide your birth Year <<as in last response patient did not provided birth year>>",2002,"Thanks, can you please confirm the following details once
+Phone Number: 555123456
+Email: test@first-insight.com
+DOB: 08/03/2002",Yes it's correct,"Thanks for the details, We have sent you the OTP on the registered email and Phone Number, Can you please enter the OTP",1111,"Thanks for the validation, Your Order No. 111 Is ready for Pickup <<response will come from API, If there are multiple orders then cards will be displayed>>, However, our clinic is closed tomorrow as it is Sunday.","Oh ok, at what earliest time can I come for pick up?","Yes, Below are working hrs, Monday to Friday, 9 to 5 PM, <<this data should come from custom data>>, you can come anytime between the above hours. Is there anything else I can help you with?",Nothing as of now,"Thanks, Have a great day! How was your experience, please rate me here https://ratings.maximeyes.com/th6r",,,,,,,,,,,,,,
+"Hi, this is Jane Smith. I ordered contacts last week, can I pick them up on Friday around 9 am?","Ok sure, Can you please provide your Date of birth, phone number, or email address",555234567 jane.smith@example.com 14th Sep,"Thanks for the details, Can you please provide your birth Year?",1985,"Thank you! Can you please confirm the following details:
+Phone Number: 555234567
+Email: jane.smith@example.com
+DOB: 09/14/1985","Yes, that's correct.","Thanks for the confirmation, We have sent an OTP to your registered email and Phone Number, please enter the OTP",2222,"Thank you for the validation, Your Order No. 112 is ready for Pickup <<response from API>>, but our clinic is closed tomorrow due to a holiday.","Oh, that's fine. What's the earliest time I can pick them up?","Our working hours are Monday to Friday, 9 AM to 5 PM, <<this data should come from custom data>>, you can come during these hours. Is there anything else I can assist you with?","No, that's all for now.","Thanks, Have a great day! Please rate your experience here: https://ratings.maximeyes.com/th6r",,,,,,,,,,,,,,
+"Hello, this is Emily White. I ordered glasses last month, can I come to pick them up on Wednesday around 10 am?","Sure, I can assist with that. Could you please provide your Date of birth, phone number, or email address?",555345678 emily.white@mail.com 22nd Oct,"Thanks, could you also provide your birth Year?",1990,"Great, can you please confirm the following details:
+Phone Number: 555345678
+Email: emily.white@mail.com
+DOB: 10/22/1990","Yes, everything is correct.","Thanks, We have sent an OTP to your registered email and Phone Number, please enter the OTP",3333,"Thanks for the validation, Your Order No. 113 is ready for Pickup <<API response>>, however, our clinic will be closed tomorrow for maintenance.","Okay, what's the earliest time I can come for pickup?","The clinic operates Monday to Friday from 9 AM to 5 PM, <<custom data>>, you're welcome to come anytime during these hours. Anything else I can help with?","No, that's it. Thanks.","Thank you, have a wonderful day! Please rate your experience here: https://ratings.maximeyes.com/th6r",,,,,,,,,,,,,,
+"Hi, this is Michael Johnson. I ordered both glasses and contacts, can I pick them up on Monday at 8 am?","Certainly! Can you please provide your Date of birth, phone number, or email address?",555456789 michael.johnson@webmail.com 30th Nov,Thank you. Could you please provide your birth Year as well?,1978,"Thanks! Please confirm the following details:
+Phone Number: 555456789
+Email: michael.johnson@webmail.com
+DOB: 11/30/1978","Yes, those details are correct.","Great, We have sent you an OTP to your registered email and Phone Number, please enter the OTP",4444,"Thank you for the validation, Your Order No. 114 is ready for Pickup <<API response>>, but please note the clinic will be closed tomorrow.","Alright, what's the earliest I can pick them up?","We're open Monday to Friday from 9 AM to 5 PM, <<this data from custom data>>, feel free to come during these hours. Anything else you need?","No, that's everything. Thanks.","Thanks, enjoy your day! How was your experience? Please rate it here: https://ratings.maximeyes.com/th6r",,,,,,,,,,,,,,
+"Hello, this is Sarah Brown. I placed an order for contacts, can I pick them up on Tuesday at 11 am?","Sure! Can you please provide your Date of birth, phone number, or email address?",555567890 sarah.brown@domain.com 15th Dec,Thank you. Can you please share your birth Year?,1995,"Thank you. Please confirm the following details:
+Phone Number: 555567890
+Email: sarah.brown@domain.com
+DOB: 12/15/1995","Yes, that's all correct.","Thank you for confirming, We have sent an OTP to your registered email and Phone Number, please enter the OTP",5555,"Thanks for the validation, Your Order No. 115 is ready for Pickup <<API response>>, however, our clinic will be closed tomorrow.","That's okay, when's the earliest time I can come by?","Our clinic hours are Monday to Friday, 9 AM to 5 PM, <<from custom data>>, you can visit anytime during these hours. Can I assist you with anything else?","No, I'm good. Thanks.","Thank you, have a great day! Please share your feedback here: https://ratings.maximeyes.com/th6r",,,,,,,,,,,,,,
